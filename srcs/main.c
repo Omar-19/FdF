@@ -89,6 +89,28 @@ t_strm	*creat_el(char *av)
 	return (tmp);
 }
 
+int		*create_array(char *av, int size)
+{
+	int		*res;
+	int		i;
+	char	*sp;
+
+	if (!(res = malloc(sizeof(int) * size)))
+		exit(0);
+	res[0] = ft_atoi(av);
+	sp = ft_strchr(av, ' ');
+	i = 1;
+	while (i < size)
+	{
+		if (sp == NULL)
+			break;
+		res[i] = ft_atoi(sp + 1);
+		sp = ft_strchr(sp + 1, ' ');
+		i++;
+	}
+	return (res);
+}
+
 int		main(int argc, char **argv)
 {
 	t_mlx	ptr;
@@ -112,10 +134,29 @@ int		main(int argc, char **argv)
 		tmp->next = creat_el(file.str);
 		tmp = tmp->next;
 	}
-	while(head_s)
+	// tmp = head_s;
+	// while(tmp)
+	// {
+	// 	printf("%s\n", tmp->s);
+	// 	tmp = tmp->next;
+	// }
+	ptr.map_i = (int **)malloc(sizeof(int *) * ptr.size_y);
+	int i = 0;
+	tmp = head_s;
+	int		**sl;
+
+	sl = ptr.map_i;
+	while (i < ptr.size_y)
 	{
-		printf("%s\n", head_s->s);
-		head_s = head_s->next;
+		sl[i] = create_array(tmp->s, ptr.size_x);
+		tmp = tmp->next;
+		++i;
+	}
+	for (int i = 0; i < ptr.size_y; i++)
+	{
+		for (int j = 0; j < ptr.size_x; j++)
+			printf("%d ", ptr.map_i[i][j]);
+		printf("\n");
 	}
 	return (0);
 }

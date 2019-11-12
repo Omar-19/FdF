@@ -32,6 +32,7 @@ typedef struct		s_mlx
 	int				bits_per_pixel;
 	int				size_line;
 	int				endian;
+	int				**map_i;
 }					t_mlx;
 
 typedef	struct		s_strm
