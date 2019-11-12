@@ -75,7 +75,7 @@ int		check_ch(char *av, char c)
 			++p;
 		++i;
 	}
-	return (i);
+	return (p);
 }
 
 t_strm	*creat_el(char *av)
