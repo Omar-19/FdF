@@ -22,22 +22,114 @@ int	some_mouse(int key)
 	return (0);
 }
 
-int		ft_write_image(t_mlx *ptr, char **av)
+void	write_tops(t_mlx *ptr)
+{
+	int i;
+	int j;
+
+	i = 0;
+	j = 0;
+	// ptr->pix_m = (int *)mlx_get_data_addr(ptr->img_ptr,
+	// 	&(ptr->bits_per_pixel), &(ptr->size_line), &(ptr->endian));
+	// if (ptr->size_x > ptr->size_y)
+	// 	ptr->size_line = (WIDTH - 300) / ptr->size_x;
+	// else
+	// 	ptr->size_line = (HEIGHT - 300) / ptr->size_y;
+	// while(i != ptr->size_y)
+	
+}
+
+void	paint_horizontal_lines(t_mlx *ptr)
+{
+	if (ptr->y0 > ptr->y)
+	{
+		ptr->y0 = ptr->y;
+		ptr->y = ptr->y0;
+	}
+    ptr->error = 0;
+	ptr->delt = (double)abs(ptr->y - ptr->y0) / (double)abs(ptr->x - ptr->x0);
+    ptr->dir_y = ptr->y - ptr->y0;
+    if (ptr->dir_y > 0)
+		ptr->dir_y = 1;
+    if (ptr->dir_y < 0) 
+		ptr->dir_y = -1;
+	while(ptr->x0 <= ptr->x)
+	{
+		ptr->pix_m[ptr->y0 * WIDTH + ptr->x0] = 0xFF0000;
+        ptr->error = ptr->error + ptr->delt;
+        if (ptr->error >= 0.5)
+		{
+			ptr->y0 = ptr->y0 + ptr->dir_y;
+            ptr->error = ptr->error - 1.0;
+		}
+		++(ptr->x0);
+	}
+}
+
+void	paint_vertical_lines(t_mlx *ptr)
+{
+	if (ptr->x0 > ptr->x)
+	{
+		ptr->x0 = ptr->x;
+		ptr->x = ptr->x0;
+	}
+    ptr->error = 0;
+	ptr->delt = (double)abs(ptr->x - ptr->x0) / (double)abs(ptr->y - ptr->y0);
+    ptr->dir_x = ptr->x - ptr->x0;
+    if (ptr->dir_x > 0)
+		ptr->dir_x = 1;
+    if (ptr->dir_x < 0) 
+		ptr->dir_x = -1;
+	while(ptr->y0 <= ptr->y)
+	{
+		ptr->pix_m[ptr->y0 * WIDTH + ptr->x0] = 0xFF0000;
+        ptr->error = ptr->error + ptr->delt;
+        if (ptr->error >= 0.5)
+		{
+			ptr->x0 = ptr->x0 + ptr->dir_x;
+            ptr->error = ptr->error - 1.0;
+		}
+		++(ptr->y0);
+	}
+}
+
+void	paint_lines(t_mlx *ptr)
+{
+	if (abs(ptr->x - ptr->x0) > abs(ptr->y - ptr->y0))
+		paint_horizontal_lines(ptr);
+	else
+		paint_vertical_lines(ptr);
+}
+
+int		ft_write_image(t_mlx *ptr)
 {
 	int i;
 
 	ptr->mlx_ptr = mlx_init();
-	ptr->win_ptr =  mlx_new_window(ptr->mlx_ptr, WIDTH, HEIGHT, "42");
-
+	ptr->win_ptr =  mlx_new_window(ptr->mlx_ptr, WIDTH, HEIGHT, "FdF");
 	ptr->img_ptr = mlx_new_image (ptr->mlx_ptr,  WIDTH, HEIGHT);
-	
-	ptr->pix_m = (int *)mlx_get_data_addr(ptr->img_ptr, &(ptr->bits_per_pixel), &(ptr->size_line), &(ptr->endian));
-	i = 0;
-	while(i++ < 800)
-		ptr->pix_m[800 * 300 + i] = 0xFF0000;
+	ptr->pix_m = (int *)mlx_get_data_addr(ptr->img_ptr,
+		&(ptr->bits_per_pixel), &(ptr->size_line), &(ptr->endian));
+	//рисование сетки
+	// write_tops(ptr);
+	//отрисовкиа линий
+
+	ptr->x0 = 5;
+	ptr->x = 500;
+	ptr->y0 = 5;
+	ptr->y = 5;
+	paint_lines(ptr);
+	ptr->x0 = 5;
+	ptr->x = 5;
+	ptr->y0 = 5;
+	ptr->y = 500;
+	paint_lines(ptr);
+
+	// while(i++ < 800)
+	// 	ptr->pix_m[800 * 300 + i] = 0xFF0000;
 
 	mlx_put_image_to_window(ptr->mlx_ptr, ptr->win_ptr, ptr->img_ptr, 0, 0);
-	
+
 	mlx_key_hook(ptr->win_ptr, some_key, (void*)0);
 	mlx_mouse_hook(ptr->win_ptr, some_mouse, (void*)0);
 	
@@ -51,6 +143,9 @@ void	ft_null(t_mlx *ptr)
 	ptr->x = 0;
 	ptr->y = 0;
 	ptr->x = 0;
+	ptr->x0 = 0;
+	ptr->y0 = 0;
+	ptr->z0 = 0;
 	ptr->size_x = 0;
 	ptr->size_y = 0;
 	ptr->bits_per_pixel = 0;
@@ -62,55 +157,6 @@ void	ft_null(t_mlx *ptr)
 	ptr->pix_m = NULL;
 }
 
-int		check_ch(char *av, char c)
-{
-	int	i;
-	int	p;
-
-	i = 0;
-	p = 0;
-	while (av[i])
-	{
-		if (av[i] == ' ')
-			++p;
-		++i;
-	}
-	return (p);
-}
-
-t_strm	*creat_el(char *av)
-{
-	t_strm *tmp;
-
-	if (!(tmp = (t_strm*)malloc(sizeof(t_strm))))
-		exit(0);
-	tmp->s = av;
-	tmp->next = NULL;
-	return (tmp);
-}
-
-int		*create_array(char *av, int size)
-{
-	int		*res;
-	int		i;
-	char	*sp;
-
-	if (!(res = malloc(sizeof(int) * size)))
-		exit(0);
-	res[0] = ft_atoi(av);
-	sp = ft_strchr(av, ' ');
-	i = 1;
-	while (i < size)
-	{
-		if (sp == NULL)
-			break;
-		res[i] = ft_atoi(sp + 1);
-		sp = ft_strchr(sp + 1, ' ');
-		i++;
-	}
-	return (res);
-}
-
 int		main(int argc, char **argv)
 {
 	t_mlx	ptr;
@@ -119,44 +165,18 @@ int		main(int argc, char **argv)
 	t_strm	*tmp;
 
 	ft_null(&ptr);
-	// ft_write_image(&ptr, argv);
 	if (argc != 2)
 		return (0);
 	file.fd = open(argv[1], O_RDONLY);
-	file.res = get_next_line(file.fd, &(file.str));
-	head_s = creat_el(file.str);
-	ptr.size_x = check_ch(head_s->s, ' ');
-	tmp = head_s;
-	while (file.res == 1)
-	{
-		++ptr.size_y;
-		file.res = get_next_line(file.fd, &(file.str));
-		tmp->next = creat_el(file.str);
-		tmp = tmp->next;
-	}
-	// tmp = head_s;
-	// while(tmp)
-	// {
-	// 	printf("%s\n", tmp->s);
-	// 	tmp = tmp->next;
-	// }
-	ptr.map_i = (int **)malloc(sizeof(int *) * ptr.size_y);
-	int i = 0;
-	tmp = head_s;
-	int		**sl;
-
-	sl = ptr.map_i;
-	while (i < ptr.size_y)
-	{
-		sl[i] = create_array(tmp->s, ptr.size_x);
-		tmp = tmp->next;
-		++i;
-	}
+	read_map(&ptr, &file, &head_s, &tmp);
+	create_map(&ptr, &file, &head_s, &tmp);
+	
 	for (int i = 0; i < ptr.size_y; i++)
 	{
 		for (int j = 0; j < ptr.size_x; j++)
 			printf("%d ", ptr.map_i[i][j]);
 		printf("\n");
 	}
+	ft_write_image(&ptr);
 	return (0);
 }

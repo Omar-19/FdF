@@ -24,10 +24,17 @@ typedef struct		s_mlx
 	void			*win_ptr;
 	void			*img_ptr;
 	int				x;
+	int				x0;
 	int				y;
+	int				y0;
 	int				z;
+	int				z0;
 	int				size_x;
 	int				size_y;
+	double			error;
+	double			delt;
+	int				dir_y;
+	int				dir_x;
 	int				*pix_m;
 	int				bits_per_pixel;
 	int				size_line;
@@ -45,5 +52,11 @@ typedef	struct		s_strm
 
 void				ft_null(t_mlx *ptr);
 int					get_next_line(const int fd, char **line);
-int					ft_write_image(t_mlx *ptr, char **av);
+int					ft_write_image(t_mlx *ptr);
+int					check_ch(char *av, char c);
+t_strm				*creat_el(char *av);
+int					*create_array(char *av, int size);
+void				paint_lines(t_mlx *ptr);
+void				read_map(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp);
+void				create_map(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp);
 #endif
