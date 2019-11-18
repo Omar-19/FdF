@@ -16,7 +16,7 @@ int		check_ch(char *av, char c)
 	return (p);
 }
 
-t_strm	*creat_el(char *av)
+t_strm	*create_el(char *av)
 {
 	t_strm *tmp;
 
@@ -49,22 +49,22 @@ int		*create_array(char *av, int size)
 	return (res);
 }
 
-void	read_map(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp)
+void	readMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 {
 	file->res = get_next_line(file->fd, &(file->str));
-	*head_s = creat_el(file->str);
+	*head_s = create_el(file->str);
 	ptr->size_x = check_ch((*head_s)->s, ' ');
 	*tmp = *head_s;
 	while (file->res == 1)
 	{
 		++(ptr->size_y);
 		file->res = get_next_line(file->fd, &(file->str));
-		(*tmp)->next = creat_el(file->str);
+		(*tmp)->next = create_el(file->str);
 		*tmp = (*tmp)->next;
 	}
 }
 
-void	create_map(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp)
+void	createMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 {
 	int		i;
 	int		**sl;
