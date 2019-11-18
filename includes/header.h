@@ -2,7 +2,7 @@
 
 # define	HEADER_H
 # define	HEIGHT			700
-# define	WIDTH			700
+# define	WIDTH			900
 # define	BUFF_SIZE		9
 # include "mlx.h"
 # include "math.h"
@@ -25,6 +25,7 @@ typedef struct		s_mlx
 {
 	int				i;
 	int				j;
+	int				angle;
 	int				color;
 	int				indent_x;
 	int				indent_y;

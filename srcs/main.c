@@ -2,9 +2,8 @@
 
 void	IndentSize(t_mlx *ptr)
 {
-	// ptr->indent_x = 170;
-	ptr->indent_x = (WIDTH - ptr->size_x * ptr->size_line) / 2;
-	ptr->indent_y = (HEIGHT - ptr->size_y * ptr->size_line) / 2;
+	ptr->indent_x = (WIDTH - (ptr->size_x - 1) * ptr->size_line) / 2;
+	ptr->indent_y = (HEIGHT - (ptr->size_y - 1) * ptr->size_line) / 2;
 }
 
 void	ft_null(t_mlx *ptr)
