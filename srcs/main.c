@@ -1,13 +1,14 @@
 # include "../includes/header.h"
 
+void	IndentSize(t_mlx *ptr)
+{
+	// ptr->indent_x = 170;
+	ptr->indent_x = (WIDTH - ptr->size_x * ptr->size_line) / 2;
+	ptr->indent_y = (HEIGHT - ptr->size_y * ptr->size_line) / 2;
+}
+
 void	ft_null(t_mlx *ptr)
 {
-	ptr->x = 0;
-	ptr->y = 0;
-	ptr->x = 0;
-	ptr->x0 = 0;
-	ptr->y0 = 0;
-	ptr->z0 = 0;
 	ptr->delt = 0;
 	ptr->dir_x = 0;
 	ptr->dir_y = 0;
@@ -21,6 +22,15 @@ void	ft_null(t_mlx *ptr)
 	ptr->img_ptr = NULL;
 	ptr->pix_m = NULL;
 	ptr->color = PEACHPUFF;
+}
+
+void	create_mlxImg(t_mlx *ptr)
+{
+	IndentSize(ptr);
+	ptr->img_ptr = mlx_new_image (ptr->mlx_ptr,  WIDTH, HEIGHT);
+	ptr->pix_m = (int *)mlx_get_data_addr(ptr->img_ptr,
+		&(ptr->bits_per_pixel), &(ptr->pix_m_size), &(ptr->endian));
+	drawGrid(ptr);
 }
 
 int		main(int argc, char **argv)

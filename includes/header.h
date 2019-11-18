@@ -58,7 +58,7 @@ typedef	struct		s_strm
 	
 }					t_strm;
 
-
+void				create_mlxImg(t_mlx *ptr);
 void				ft_null(t_mlx *ptr);
 int					get_next_line(const int fd, char **line);
 int					createImage(t_mlx *ptr);
@@ -72,4 +72,6 @@ void				drawVerticalLines(t_mlx ptr);
 void				readMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp);
 void				createMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp);
 void				drawGrid(t_mlx *ptr);
+void				IndentSize(t_mlx *ptr);
+
 #endif

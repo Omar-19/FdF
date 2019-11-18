@@ -25,10 +25,20 @@ int	key_press(int key, void *param)
 		// paint_lines(ptr);
 	}
 	if (key == NUM_PAD_PLUS)
+	{
+		ptr->indent_x -= ZOOM/2;
+		ptr->indent_y -= ZOOM/2;
 		ptr->size_line += ZOOM;
+	}
 	if (key == NUM_PAD_MINUS)
+	{
+		ptr->indent_x += ZOOM/2;
+		ptr->indent_y += ZOOM/2;
 		ptr->size_line -= ZOOM;
+	}
 	(ptr->size_line < 0) ? (ptr->size_line = 0) : 0;
+	mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);
+	create_mlxImg(ptr);
 	drawGrid(ptr);
 	mlx_put_image_to_window(ptr->mlx_ptr, ptr->win_ptr, ptr->img_ptr, 0, 0);
 	return (0);
