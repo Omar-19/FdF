@@ -25,7 +25,7 @@ typedef struct		s_mlx
 {
 	int				i;
 	int				j;
-	int				angle;
+	int				angle[3]; // 0-x 1-y 2-z
 	int				color;
 	int				indent_x;
 	int				indent_y;
@@ -49,7 +49,9 @@ typedef struct		s_mlx
 	int				bits_per_pixel; // ???
 	int				size_line; // размер линии, связующей вершины
 	int				endian; // ???
-	int				**map_i;
+	int				**map_x;
+	int				**map_y;
+	int				**map_z;
 }					t_mlx;
 
 typedef	struct		s_strm
@@ -59,6 +61,8 @@ typedef	struct		s_strm
 	
 }					t_strm;
 
+void				matrixConversion(t_mlx *ptr);
+void				createGridСoordinates(t_mlx *ptr);
 void				create_mlxImg(t_mlx *ptr);
 void				ft_null(t_mlx *ptr);
 int					get_next_line(const int fd, char **line);

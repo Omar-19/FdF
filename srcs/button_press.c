@@ -26,15 +26,22 @@ int	key_press(int key, void *param)
 	}
 	if (key == NUM_PAD_PLUS)
 	{
-		ptr->indent_x -= ZOOM/2;
-		ptr->indent_y -= ZOOM/2;
-		ptr->size_line += ZOOM;
+		matrixConversion(ptr);
+		// ptr->indent_x -= ZOOM/2;
+		// (ptr->indent_x < 0) ? (ptr->indent_x = 0) : 0;
+		// ptr->indent_y -= ZOOM/2;
+		// (ptr->indent_y < 0) ? (ptr->indent_y = 0) : 0;
+		// ptr->size_line += ZOOM;
 	}
 	if (key == NUM_PAD_MINUS)
 	{
-		ptr->indent_x += ZOOM/2;
-		ptr->indent_y += ZOOM/2;
-		ptr->size_line -= ZOOM;
+		drawGrid(ptr);
+		// ptr->indent_x += ZOOM/2;
+		// (ptr->indent_x > WIDTH/2) ? (ptr->indent_x = WIDTH/2) : 0;
+		// ptr->indent_y += ZOOM/2;
+		// (ptr->indent_y > HEIGHT/2) ? (ptr->indent_x = HEIGHT/2) : 0;
+		// ptr->size_line -= ZOOM;
+		// (ptr->size_line < 0) ? (ptr->size_line = 0) : 0;
 	}
 	(ptr->size_line < 0) ? (ptr->size_line = 0) : 0;
 	mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);

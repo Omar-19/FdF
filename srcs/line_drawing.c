@@ -42,10 +42,23 @@ void	drawVerticalLines(t_mlx ptr)
 	}
 }
 
+void	replace_xyz(t_mlx *ptr)
+{
+	ptr->x0 = (ptr->x0 - ptr->y0) * cos(0.46373398);
+	ptr->y0 = -ptr->z0 + (ptr->x0 + ptr->y0) * sin(0.46373398);
+}
+
 void	paint_lines(t_mlx ptr, int i)
 {
+	// replace_xyz(&ptr);
+	// ((ptr.x0 - ptr.y0) * cos(0.46373398) < 0) ? (printf("+\n")) : 0;
+	// ((-ptr.z + (ptr.x0 + ptr.y0) * sin(0.46373398)) < 0) ? (printf("-\n")) : 0;
+	// printf("ptr.x0 = %d -> %f\n", ptr.x0, (ptr.x0 - ptr.y0) * cos(0.46373398));
+	// printf("ptr.y0 = %d -> %f\n\n", ptr.y0, (-ptr.z + (ptr.x0 + ptr.y0) * sin(0.46373398)));
+	// ptr.y0 = -ptr.z0 + (ptr.x0 + ptr.y0) * sin(0.46373398);
 	(i == -1) ? (ptr.x = ptr.x0) : 0;
 	(i == 0) ? (ptr.y = ptr.y0) : 0;
+
 	if (ptr.x0 > ptr.x)
 	{
 		ptr.i = ptr.x0;

@@ -49,7 +49,7 @@ int		*create_array(char *av, int size)
 	return (res);
 }
 
-void	readMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp)
+void	readMap(t_mlx *ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 {
 	file->res = get_next_line(file->fd, &(file->str));
 	*head_s = create_el(file->str);
@@ -70,12 +70,16 @@ void	createMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 	int		**sl;
 
 	i = 0;
-	ptr->map_i = (int **)malloc(sizeof(int *) * ptr->size_y);
+	ptr->map_x = (int **)malloc(sizeof(int *) * ptr->size_y);
+	ptr->map_y = (int **)malloc(sizeof(int *) * ptr->size_y);
+	ptr->map_z = (int **)malloc(sizeof(int *) * ptr->size_y);
 	*tmp = *head_s;
-	sl = ptr->map_i;
+	sl = ptr->map_z;
 	while (i < ptr->size_y)
 	{
 		sl[i] = create_array((*tmp)->s, ptr->size_x);
+		*(ptr->map_x + i) = create_array((*tmp)->s, ptr->size_x);
+		*(ptr->map_y + i) = create_array((*tmp)->s, ptr->size_x);
 		*tmp = (*tmp)->next;
 		++i;
 	}
