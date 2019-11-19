@@ -1,8 +1,8 @@
 #ifndef		HEADER_H
 
 # define	HEADER_H
-# define	HEIGHT			700
-# define	WIDTH			900
+# define	HEIGHT			1000
+# define	WIDTH			1000
 # define	BUFF_SIZE		9
 # include "mlx.h"
 # include "math.h"
@@ -21,37 +21,28 @@ typedef struct		s_file
 	int				res;
 }					t_file;
 
+typedef struct 		s_point
+{
+	int x;
+	int y;
+	int z;
+	struct 		s_point *top;
+	struct 		s_point *left;
+}					t_point;
+
 typedef struct		s_mlx
 {
-	int				i;
-	int				j;
-	int				angle[3]; // 0-x 1-y 2-z
-	int				color;
-	int				indent_x;
-	int				indent_y;
 	void			*mlx_ptr;
 	void			*win_ptr;
 	void			*img_ptr;
-	int				x0;
-	int				x;
-	int				y0;
-	int				y;
-	int				z0;
-	int				z;
-	int				size_x; // map size
-	int				size_y; // map size
-	double			error;
-	double			delt;
-	int				dir_y;
-	int				dir_x;
+	int				size_x;
+	int				size_y;
 	int				*pix_m;
+	t_point			**map;
 	int				pix_m_size; // длина массива пикселей
 	int				bits_per_pixel; // ???
 	int				size_line; // размер линии, связующей вершины
 	int				endian; // ???
-	int				**map_x;
-	int				**map_y;
-	int				**map_z;
 }					t_mlx;
 
 typedef	struct		s_strm
@@ -61,6 +52,7 @@ typedef	struct		s_strm
 	
 }					t_strm;
 
+void				writeMatrix(t_mlx ptr);
 void				matrixConversion(t_mlx *ptr);
 void				createGridСoordinates(t_mlx *ptr);
 void				create_mlxImg(t_mlx *ptr);
