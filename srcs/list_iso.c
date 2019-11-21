@@ -44,6 +44,7 @@ void	lst_map_p(t_mlx *ptr)
 			ptr->color1 = 0x00FF00;
 			draw_line(*ptr, tmp, tmp->top);
 		}
+		tmp = tmp->next;
 		++i;
     }
 }

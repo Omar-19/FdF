@@ -77,6 +77,14 @@ int		main(int argc, char **argv)
 	file.fd = open(argv[1], O_RDONLY);
 	readMap(&ptr, &file, &head_s, &tmp);
 	createMap(&ptr, &file, &head_s, &tmp);
+	// t_point *k;
+	// k = ptr.map;
+	// while (k)
+	// {
+	// 	printf("x %d y %d z %d\n", k->x, k->y, k->z);
+	// 	k = k->next;
+	// }
+	
 	createImage(&ptr);
 	// printf("x = %d\n", (*(ptr.map + 1))->left->x);
 	return (0);

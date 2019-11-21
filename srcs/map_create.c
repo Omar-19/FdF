@@ -52,22 +52,22 @@ int		*create_array(char *av, int size)
 void	readMap(t_mlx *ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 {
 	file->res = get_next_line(file->fd, &(file->str));
-	free((file->str));
 	*head_s = create_el(file->str);
 	ptr->size_x = check_ch((*head_s)->s, ' ');
+	// free((file->str));
 	*tmp = *head_s;
 	while (file->res == 1)
 	{
 		++(ptr->size_y);
 		file->res = get_next_line(file->fd, &(file->str));
-		if (!(*(file->str)))
+		if (file->res == 0)
 		{
 			free((file->str));
 			break;
 		}
 		// printf("%s\n", file->str);
 		(*tmp)->next = create_el(file->str);
-		free((file->str));
+		// free((file->str));
 		*tmp = (*tmp)->next;
 	}
 }
