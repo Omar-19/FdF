@@ -41,6 +41,9 @@ int		createImage(t_mlx *ptr)
 	int i;
 	void *a;
 
+	ptr->dx = 0.5;
+	ptr->dy = 0;
+	ptr->dz = 0;
 	ptr->mlx_ptr = mlx_init();
 	ptr->win_ptr =  mlx_new_window(ptr->mlx_ptr, WIDTH, HEIGHT, "FdF project");
 	create_mlxImg(ptr);

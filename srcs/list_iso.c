@@ -49,29 +49,31 @@ void	lst_map_p(t_mlx *ptr)
     }
 }
 
-// void	lst_x_sligt(t_mlx *ptr)
-// {
-// 	float	x;
-// 	float	y;
-// 	float	z;
-// 	int		i;
+void	lst_x_sligt(t_mlx *ptr)
+{
+	float	x;
+	float	y;
+	float	z;
+	int		i;
+	t_point *tmp;
 
-// 	i = 0;
-//     while (i < ptr->size_y * ptr->size_x)
-//     {
-// 		(*(ptr->map + i))->x = (*(ptr->map + i))->x0;
-// 		(*(ptr->map + i))->y = ((*(ptr->map + i))->y0) * cos(ptr->dx) + ((*(ptr->map + i))->z0) * sin(ptr->dx);
-// 		(*(ptr->map + i))->z = -((*(ptr->map + i))->y0) * sin(ptr->dx) + ((*(ptr->map + i))->z0) * cos(ptr->dx);
+	tmp = ptr->map;
+	i = 0;
+    while (tmp)
+    {
+		tmp->x = tmp->x0;
+		tmp->y = (tmp->y0) * cos(ptr->dx) + (tmp->z0) * sin(ptr->dx);
+		tmp->z = -(tmp->y0) * sin(ptr->dx) + (tmp->z0) * cos(ptr->dx);
 
-// 		x = (*(ptr->map + i))->x;
-// 		z = (*(ptr->map + i))->z;
-// 		(*(ptr->map + i))->x = x * cos(ptr->dy) + z * sin(ptr->dy);
-// 		(*(ptr->map + i))->z = -x * sin(ptr->dy) + z * cos(ptr->dy);
+		x = tmp->x;
+		z = tmp->z;
+		tmp->x = x * cos(ptr->dy) + z * sin(ptr->dy);
+		tmp->z = -x * sin(ptr->dy) + z * cos(ptr->dy);
 
-// 		x = (*(ptr->map + i))->x;
-// 		y = (*(ptr->map + i))->y;
-// 		(*(ptr->map + i))->x = x * cos(ptr->dz) - y * sin(ptr->dz);
-// 		(*(ptr->map + i))->y = x * sin(ptr->dz) + y * cos(ptr->dz);
-// 		++i;
-//     }
-// }
+		x = tmp->x;
+		y = tmp->y;
+		tmp->x = x * cos(ptr->dz) - y * sin(ptr->dz);
+		tmp->y = x * sin(ptr->dz) + y * cos(ptr->dz);
+		tmp = tmp->next;
+    }
+}
