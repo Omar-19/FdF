@@ -50,9 +50,12 @@ typedef struct		s_mlx
 	int				endian; // ???
 	int				color1;
 	int				color2;
-	float dx;
-	float dy;
-	float dz;
+	float			g;
+	float			dx;
+	float			dy;
+	float			dz;
+	int				zmx;
+	int				zmn;
 }					t_mlx;
 
 typedef struct 		s_line
@@ -61,6 +64,8 @@ typedef struct 		s_line
 	float y0;
 	float x;
 	float y;
+	float z;
+	float z0;
 	int i;
 	int error;
 	int delt;

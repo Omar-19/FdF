@@ -31,9 +31,14 @@ void	writeMatrix(t_mlx ptr)
 
 void	create_mlxImg(t_mlx *ptr)
 {
+	if (ptr->img_ptr)
+		mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);
 	ptr->img_ptr = mlx_new_image (ptr->mlx_ptr,  WIDTH, HEIGHT);
 	ptr->pix_m = (int *)mlx_get_data_addr(ptr->img_ptr,
 		&(ptr->bits_per_pixel), &(ptr->pix_m_size), &(ptr->endian));
+	lst_iso(ptr);
+	lst_map_p(ptr);
+	mlx_put_image_to_window(ptr->mlx_ptr, ptr->win_ptr, ptr->img_ptr, 0, 0);
 }
 
 int		createImage(t_mlx *ptr)
@@ -41,24 +46,14 @@ int		createImage(t_mlx *ptr)
 	int i;
 	void *a;
 
-	ptr->dx = 0.5;
+	ptr->dx = 0;
 	ptr->dy = 0;
 	ptr->dz = 0;
 	ptr->mlx_ptr = mlx_init();
 	ptr->win_ptr =  mlx_new_window(ptr->mlx_ptr, WIDTH, HEIGHT, "FdF project");
 	create_mlxImg(ptr);
-	lst_map_p(ptr);
-	// обработка клавиатуры
 	mlx_hook(ptr->win_ptr, 2, 0, key_press, ptr);
-	// create_mlxImg(ptr);
-	// drawGrid_1(ptr);
-	// draw_line(ptr->pix_m, 50, 50, 500, 150);
-	// draw_line(ptr->pix_m, 50, 150, 500, 50);
-	// draw_line(ptr->pix_m, 50, 50, 150, 500);
-	// draw_line(ptr->pix_m, 150, 50, 50, 500);
-	// draw_line(ptr->pix_m, 424, 641, 504, 677);
 	mlx_put_image_to_window(ptr->mlx_ptr, ptr->win_ptr, ptr->img_ptr, 0, 0);
-	
 	mlx_loop(ptr->mlx_ptr);
 	mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);
 	return (0);
@@ -80,15 +75,9 @@ int		main(int argc, char **argv)
 	file.fd = open(argv[1], O_RDONLY);
 	readMap(&ptr, &file, &head_s, &tmp);
 	createMap(&ptr, &file, &head_s, &tmp);
-	// t_point *k;
-	// k = ptr.map;
-	// while (k)
-	// {
-	// 	printf("x %d y %d z %d\n", k->x, k->y, k->z);
-	// 	k = k->next;
-	// }
-	
+	ptr.img_ptr = NULL;
+	ptr.color1 = YELLOW;
+	ptr.color2 = RED;
 	createImage(&ptr);
-	// printf("x = %d\n", (*(ptr.map + 1))->left->x);
 	return (0);
 }

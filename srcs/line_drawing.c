@@ -102,10 +102,13 @@
 void	line_y(t_mlx pr, t_line ptr)
 {
 	float tmp;
-
-	tmp = fabsf(ptr.x - ptr.x0) / fabsf(ptr.y - ptr.y0);
 	float er = 0;
 	float opt;
+	int dl;
+	float c2;
+
+	c2 = (ptr.z > ptr.z0) ? (ptr.z0 - pr.zmn) : (ptr.z - pr.zmn);
+	tmp = fabsf(ptr.x - ptr.x0) / fabsf(ptr.y - ptr.y0);
 	if (ptr.x0 > ptr.x)
 		opt = -1;
 	else
@@ -113,7 +116,7 @@ void	line_y(t_mlx pr, t_line ptr)
 	while (ptr.y0 <= ptr.y)
 	{
 		if (ptr.y0 < HEIGHT && ptr.y0 >= 0 && ptr.x0 < WIDTH && ptr.x0 >= 0)
-			pr.pix_m[(int)ptr.y0 * WIDTH + (int)ptr.x0 + 1] = pr.color1;
+			pr.pix_m[(int)ptr.y0 * WIDTH + (int)ptr.x0 + 1] = pr.color1 - (pr.g) * (pr.zmx - ptr.z);
 		er += tmp;
 		if (er >= 0.5)
 		{
@@ -124,13 +127,17 @@ void	line_y(t_mlx pr, t_line ptr)
 	}
 }
 
+
 void	line_x(t_mlx pr, t_line ptr)
 {
 	float tmp;
-
-	tmp = fabsf(ptr.y - ptr.y0) / fabsf(ptr.x - ptr.x0);
 	float er = 0;
 	float opt;
+	int dl;
+	float c2;
+
+	c2 = (ptr.z > ptr.z0) ? (ptr.z0 - pr.zmn) : (ptr.z - pr.zmn);
+	tmp = fabsf(ptr.y - ptr.y0) / fabsf(ptr.x - ptr.x0);
 	if (ptr.y0 > ptr.y)
 		opt = -1;
 	else
@@ -138,7 +145,7 @@ void	line_x(t_mlx pr, t_line ptr)
 	while (ptr.x0 <= ptr.x)
 	{
 		if (ptr.x0 < HEIGHT && ptr.x0 >= 0 && ptr.y0 < WIDTH && ptr.y0 >= 0)
-			pr.pix_m[(int)ptr.y0 * WIDTH + (int)ptr.x0 + 1] = pr.color1;
+			pr.pix_m[(int)ptr.y0 * WIDTH + (int)ptr.x0 + 1] = pr.color1 - (pr.g) * (pr.zmx - ptr.z);
 		er += tmp;
 		if (er >= 0.5)
 		{
@@ -154,10 +161,12 @@ void	draw_line(t_mlx pr, t_point *t1, t_point *t2)
 	float tmp;
 	t_line ptr;
 
-	ptr.x0 = (float)(t1->x);
-	ptr.x = (float)(t2->x);
-	ptr.y0 = (float)(t1->y);
-	ptr.y = (float)(t2->y);
+	ptr.x0 = (float)(t1->x) + 300;
+	ptr.x = (float)(t2->x) + 300;
+	ptr.y0 = (float)(t1->y) + 300;
+	ptr.y = (float)(t2->y) + 300;
+	ptr.z = (float)(t2->z);
+	// printf();
 	if ((ptr.x0 > WIDTH || ptr.x > WIDTH) || (ptr.x0 < 0 || ptr.x < 0)
 		|| (ptr.y0 > HEIGHT || ptr.y > HEIGHT) || (ptr.y0 < 0 || ptr.y < 0))
 		return ;

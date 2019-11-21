@@ -1,26 +1,49 @@
 # include "../includes/header.h"
 
+void grad(t_mlx *ptr, int d)
+{
+	t_point *tmp;
+
+	tmp = ptr->map;
+	while (tmp)
+	{
+		(tmp->col) ? (tmp->z0 += d) : 0;
+		tmp = tmp->next; 
+	}
+	ptr->zmx += d;
+	ptr->zmn += d;
+	ptr->g = fabsf(fabsf((float)YELLOW - (float)RED)/ fabsf((float)ptr->zmx - (float)ptr->zmn));
+}
+
 int	key_press(int key, void *param)
 {
 	t_mlx *ptr;
 
 	ptr = (t_mlx *)param;
+	// printf("key = %d\n", key);
 	if (key == NUM_PAD_ESC)
 		exit(1);
-	else if (key == NUM_PAD_0 || key == NUM_PAD_1 || key == NUM_PAD_2 ||
-			key == NUM_PAD_3 || key == NUM_PAD_4 || key == NUM_PAD_5 ||
+	else if (key == NUM_PAD_0 || key == NUM_PAD_2 ||
+			key == NUM_PAD_4 || key == NUM_PAD_5 ||
 			key == NUM_PAD_6 || key == NUM_PAD_7 || key == NUM_PAD_8 ||
 													key == NUM_PAD_9)
 	{
-		int i;
+		(key == NUM_PAD_0) ? grad(ptr, -10) : 0;
+		(key == NUM_PAD_5) ? grad(ptr, 10) : 0;
+		(key == NUM_PAD_4) ? ptr->dy -= 0.2 : 0;
+		(key == NUM_PAD_6) ? ptr->dy += 0.2 : 0;
+		(key == NUM_PAD_2) ? ptr->dx -= 0.2 : 0;
+		(key == NUM_PAD_8) ? ptr->dx += 0.2 : 0;
+		(key == NUM_PAD_7) ? ptr->dy -= 0.2 : 0;
+		(key == NUM_PAD_9) ? ptr->dz += 0.2 : 0;
+		create_mlxImg(ptr);
 	}
 	if (key == NUM_PAD_PLUS)
 	{
-        mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);
-        create_mlxImg(ptr);
-        lst_iso(ptr);
-        lst_map_p(ptr);
-        mlx_put_image_to_window(ptr->mlx_ptr, ptr->win_ptr, ptr->img_ptr, 0, 0);
+        // mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);
+        // create_mlxImg(ptr);
+        // lst_map_p(ptr);
+        // mlx_put_image_to_window(ptr->mlx_ptr, ptr->win_ptr, ptr->img_ptr, 0, 0);
         // lst_map_p(ptr);
 		// ptr->indent_x -= ZOOM/2;
 		// (ptr->indent_x < 0) ? (ptr->indent_x = 0) : 0;
@@ -30,12 +53,8 @@ int	key_press(int key, void *param)
 	}
 	if (key == NUM_PAD_MINUS)
 	{
-		mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);
+		// mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);
         create_mlxImg(ptr);
-		lst_x_sligt(ptr);
-		lst_iso(ptr);
-        lst_map_p(ptr);
-        mlx_put_image_to_window(ptr->mlx_ptr, ptr->win_ptr, ptr->img_ptr, 0, 0);
 		// ptr->indent_x += ZOOM/2;
 		// (ptr->indent_x > WIDTH/2) ? (ptr->indent_x = WIDTH/2) : 0;
 		// ptr->indent_y += ZOOM/2;
@@ -43,6 +62,7 @@ int	key_press(int key, void *param)
 		// ptr->size_line -= ZOOM;
 		// (ptr->size_line < 0) ? (ptr->size_line = 0) : 0;
 	}
+	// if ()
 	// (ptr->size_line < 0) ? (ptr->size_line = 0) : 0;
 	return (0);
 }

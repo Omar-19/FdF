@@ -10,14 +10,14 @@
 # define	NUM_PAD_S_PLUS	24	// ???
 # define	NUM_PAD_S_NIMUS	27	// ???
 # define	NUM_PAD_1		18
-# define	NUM_PAD_2		19
+# define	NUM_PAD_2		84
 # define	NUM_PAD_3		20
-# define	NUM_PAD_4		21
-# define	NUM_PAD_5		23
-# define	NUM_PAD_6		22
-# define	NUM_PAD_7		26
-# define	NUM_PAD_8		28
-# define	NUM_PAD_9		25
-# define	NUM_PAD_0		29
+# define	NUM_PAD_4		86
+# define	NUM_PAD_5		87
+# define	NUM_PAD_6		88
+# define	NUM_PAD_7		89
+# define	NUM_PAD_8		91
+# define	NUM_PAD_9		92
+# define	NUM_PAD_0		82
 
 #endif

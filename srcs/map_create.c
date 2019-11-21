@@ -124,6 +124,7 @@ t_point	*creat_el(int x, int y, int z)
 	tmp->x0 = x;
 	tmp->y0 = y;
 	tmp->z0 = z;
+	tmp->col = (z) ? 1 : 0;
 	return (tmp);
 }
 
@@ -139,7 +140,6 @@ void	createMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 	i = 0;
 	j = 0;
 	*tmp = *head_s;
-	// ptr->map = r;
 	while (*tmp)
 	{
 		l = create_array((*tmp)->s, ptr->size_x);
@@ -149,10 +149,14 @@ void	createMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 			if (j++ == 0)
 			{
 				ptr->map = creat_el(40 * i, (40 * k) / ptr->size_x, l[i]);
+				ptr->zmn = l[i];
+				ptr->zmx = l[i];
 				r = (ptr->map);
 			}
 			else
 			{
+				(l[i] > ptr->zmx) ? (ptr->zmx = l[i]) : 0;
+				(l[i] < ptr->zmn) ? (ptr->zmn = l[i]) : 0;
 				r->next = creat_el(40 * i, (40 * k) / ptr->size_x, l[i]);
 				r = r->next;
 			}

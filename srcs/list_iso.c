@@ -7,16 +7,17 @@ void	iso_one(t_point *tmp)
 
 	x0 = tmp->x;
 	y0 = tmp->y;
-	tmp->x = (float)x0 * cos(0.5) - (float)y0 * sin(0.5);
-	tmp->y = (float)x0 * sin(0.5) + (float)y0 * cos(0.5);
-	// tmp->x = (float)(x0 - y0) * cos(0.523599);
-	// tmp->y = (float)(x0 + y0) * sin(0.523599) - (float)tmp->z;
+	// tmp->x = (float)x0 * cos(0.5) - (float)y0 * sin(0.5);
+	// tmp->y = (float)x0 * sin(0.5) + (float)y0 * cos(0.5);
+	tmp->x = (float)(x0 - y0) * cos(0.523599);
+	tmp->y = (float)(x0 + y0) * sin(0.523599) - (float)(tmp->z);
 }
 
 void    lst_iso(t_mlx *ptr)
 {
 	t_point *tmp;
 
+	lst_x_sligt(ptr);
 	tmp = ptr->map;
     while (tmp)
     {
@@ -35,15 +36,9 @@ void	lst_map_p(t_mlx *ptr)
     while (tmp)
     {
     	if (tmp->left)
-		{
-			ptr->color1 = RED;
 			draw_line(*ptr, tmp, tmp->left);
-		}
 		if (tmp->top)
-		{
-			ptr->color1 = 0x00FF00;
 			draw_line(*ptr, tmp, tmp->top);
-		}
 		tmp = tmp->next;
 		++i;
     }
