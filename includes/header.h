@@ -26,6 +26,10 @@ typedef struct 		s_point
 	int x;
 	int y;
 	int z;
+	int x0;
+	int y0;
+	int z0;
+	int	col;
 	struct 		s_point *top;
 	struct 		s_point *left;
 }					t_point;
@@ -43,7 +47,25 @@ typedef struct		s_mlx
 	int				bits_per_pixel; // ???
 	int				size_line; // размер линии, связующей вершины
 	int				endian; // ???
+	int				color1;
+	int				color2;
+	float			dx;
+	float			dy;
+	float			dz;
 }					t_mlx;
+
+typedef struct 		s_line
+{
+	float x0;
+	float y0;
+	float x;
+	float y;
+	int i;
+	int error;
+	int delt;
+	int dir_x;
+	int dir_y;
+}					t_line;
 
 typedef	struct		s_strm
 {
@@ -63,12 +85,71 @@ int					check_ch(char *av, char c);
 t_strm				*create_el(char *av);
 int					*create_array(char *av, int size);
 int					key_press(int keycode, void *param);
-void				paint_lines(t_mlx ptr, int i);
-void				drawHorizontalLines(t_mlx ptr);
-void				drawVerticalLines(t_mlx ptr);
+void				drawHorizontalLines(t_mlx pr, t_line ptr);
+void				drawVerticalLines(t_mlx pr, t_line ptr);
+void				paint_lines(t_mlx pr, t_point *t1, t_point *t2);
 void				readMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp);
 void				createMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp);
 void				drawGrid(t_mlx *ptr);
 void				IndentSize(t_mlx *ptr);
+void				iso_one(t_point *tmp);
+void    			lst_iso(t_mlx *ptr);
+void				lst_map_p(t_mlx *ptr);
+void				draw_line(t_mlx pr, t_point *t1, t_point *t2);
+void				line_y(t_mlx pr, t_line ptr);
+void				line_x(t_mlx pr, t_line ptr);
+void				lst_x_sligt(t_mlx *ptr);
+// void	draw_line(int *pix, float x0, float y0, float x1, float y1);
+
 
 #endif
+
+// void	line_y(int *pix, float x0, float y0, float x1, float y1)
+// {
+// 	float tmp;
+
+// 	tmp = fabsf(x1 - x0) / fabsf(y1 - y0);
+// 	float er = 0;
+// 	float opt;
+// 	if (x0 > x1)
+// 		opt = -1;
+// 	else
+// 		opt = 1;
+// 	while (y0 <= y1)
+// 	{
+// 		if (y0 < HEIGHT && y0 >= 0 && x0 < WIDTH && x0 >= 0)
+// 			pix[(int)y0 * WIDTH + (int)x0 + 1] = 0xFF;
+// 		er += tmp;
+// 		if (er >= 0.5)
+// 		{
+// 			x0 += opt;
+// 			er -= 1;
+// 		}
+// 		(y0)++;
+// 	}
+// }
+
+// void	line_x(int *pix, float x0, float y0, float x1, float y1)
+// {
+// 	float tmp;
+
+// 	tmp = fabsf(y1 - y0) / fabsf(x1 - x0);
+// 	float er = 0;
+// 	float opt;
+// 	if (y0 > y1)
+// 		opt = -1;
+// 	else
+// 		opt = 1;
+// 	while (x0 <= x1)
+// 	{
+// 		if (x0 < HEIGHT && x0 >= 0 && y0 < WIDTH && y0 >= 0)
+// 			pix[(int)y0 * WIDTH + (int)x0 + 1] = 0xFF;
+// 		er += tmp;
+// 		if (er >= 0.5)
+// 		{
+// 			y0 += opt;
+// 			er -= 1;
+// 		}
+// 		(x0)++;
+// 	}
+// }

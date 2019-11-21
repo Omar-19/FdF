@@ -1,4 +1,4 @@
-# include "includes/header.h"
+# include "../includes/header.h"
 
 int		check_ch(char *av, char c)
 {
@@ -74,6 +74,7 @@ void	links_map(t_mlx	*ptr)
 
 	i = 0;
 	k = 0;
+	// printf("%d %d\n", ptr->size_x, ptr->size_y);
 	while (i < ptr->size_x * ptr->size_y)
 	{
 		if (i < ptr->size_x)
@@ -81,23 +82,12 @@ void	links_map(t_mlx	*ptr)
 		else
 			b = *(ptr->map + i - ptr->size_x);
 		if (!i || !((i) % ptr->size_x))
-		{
-			// printf("i = %d\n", i);
 			l = NULL;
-		}
 		else
-		{
-			// printf("ilef = %d\n", i);
 			l = *(ptr->map + i - 1);
-			// printf("ilef = %p\n", l);
-			// printf("x = %d\n", l->z);
-		}
 		(*(ptr->map + i))->top = b;
 		(*(ptr->map + i))->left = l;
-		// if (i == 1)
-		// 	printf(" %p \n", ((ptr->map)[i]).left);
 		i++;
-		// (i % 10) ? k += ptr->size_x : 0;
 	}
 	
 }
@@ -110,6 +100,9 @@ t_point	*creat_el(int x, int y, int z)
 	tmp->x = x;
 	tmp->y = y;
 	tmp->z = z;
+	tmp->x0 = x;
+	tmp->y0 = y;
+	tmp->z0 = z;
 	return (tmp);
 }
 
@@ -131,14 +124,9 @@ void	createMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 		i = 0;
 		while (i < ptr->size_x)
 		{
-			// (ptr->map[i + k]).x = 40 * i;
-			// (ptr->map[i + k]).y = (40 * k) / ptr->size_x;
-			// (ptr->map[i + k]).z = l[i];
 			*(ptr->map + i + k) = creat_el(40 * i, (40 * k) / ptr->size_x, l[i]);
-			// printf("%d ", (ptr->map[i + k]).z);
 			i++;
 		}
-		// printf("\n");
 		k += ptr->size_x;
 		(*tmp) = (*tmp)->next;
 	}
