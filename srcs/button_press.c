@@ -16,9 +16,6 @@ int	key_press(int key, void *param)
 	}
 	if (key == NUM_PAD_PLUS)
 	{
-		// ptr->dx = 0.5;
-		// ptr->dy = 0;
-		// ptr->dz = 0;
         mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);
         create_mlxImg(ptr);
         lst_iso(ptr);
@@ -33,14 +30,6 @@ int	key_press(int key, void *param)
 	}
 	if (key == NUM_PAD_MINUS)
 	{
-		// mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);
-        // create_mlxImg(ptr);
-		// ptr->dx = 0.5;
-		// ptr->dy = 0;
-		// ptr->dz = 0;
-        // lst_iso(ptr);
-        // lst_map_p(ptr);
-        // mlx_put_image_to_window(ptr->mlx_ptr, ptr->win_ptr, ptr->img_ptr, 0, 0);
 		// ptr->indent_x += ZOOM/2;
 		// (ptr->indent_x > WIDTH/2) ? (ptr->indent_x = WIDTH/2) : 0;
 		// ptr->indent_y += ZOOM/2;

@@ -15,63 +15,62 @@ void	iso_one(t_point *tmp)
 
 void    lst_iso(t_mlx *ptr)
 {
-    int i;
-    int j;
+	t_point *tmp;
 
-	j = 0;
-	i = 0;
-	// lst_x_sligt(ptr);
-    while (i < ptr->size_y * ptr->size_x)
+	tmp = ptr->map;
+    while (tmp)
     {
-    	iso_one(*(ptr->map + i));
-		++i;
+    	iso_one(tmp);
+		tmp= tmp->next;
     }
 }
 
 void	lst_map_p(t_mlx *ptr)
 {
 	int i;
+	t_point *tmp;
 
+	tmp = ptr->map;
 	i = 0;
-    while (i < ptr->size_y * ptr->size_x)
+    while (tmp)
     {
-    	if ((*(ptr->map + i))->left)
+    	if (tmp->left)
 		{
 			ptr->color1 = RED;
-			draw_line(*ptr, *(ptr->map + i), (*(ptr->map + i))->left);
+			draw_line(*ptr, tmp, tmp->left);
 		}
-		if ((*(ptr->map + i))->top)
+		if (tmp->top)
 		{
 			ptr->color1 = 0x00FF00;
-			draw_line(*ptr, *(ptr->map + i), (*(ptr->map + i))->top);
+			draw_line(*ptr, tmp, tmp->top);
 		}
 		++i;
     }
 }
 
-void	lst_x_sligt(t_mlx *ptr)
-{
-	float	x;
-	float	y;
-	float	z;
-	int		i;
+// void	lst_x_sligt(t_mlx *ptr)
+// {
+// 	float	x;
+// 	float	y;
+// 	float	z;
+// 	int		i;
 
-	i = 0;
-    while (i < ptr->size_y * ptr->size_x)
-    {
-		(*(ptr->map + i))->x = (*(ptr->map + i))->x0;
-		(*(ptr->map + i))->y = ((*(ptr->map + i))->y0) * cos(ptr->dx) + ((*(ptr->map + i))->z0) * sin(ptr->dx);
-		(*(ptr->map + i))->z = -((*(ptr->map + i))->y0) * sin(ptr->dx) + ((*(ptr->map + i))->z0) * cos(ptr->dx);
+// 	i = 0;
+//     while (i < ptr->size_y * ptr->size_x)
+//     {
+// 		(*(ptr->map + i))->x = (*(ptr->map + i))->x0;
+// 		(*(ptr->map + i))->y = ((*(ptr->map + i))->y0) * cos(ptr->dx) + ((*(ptr->map + i))->z0) * sin(ptr->dx);
+// 		(*(ptr->map + i))->z = -((*(ptr->map + i))->y0) * sin(ptr->dx) + ((*(ptr->map + i))->z0) * cos(ptr->dx);
 
-		x = (*(ptr->map + i))->x;
-		z = (*(ptr->map + i))->z;
-		(*(ptr->map + i))->x = x * cos(ptr->dy) + z * sin(ptr->dy);
-		(*(ptr->map + i))->z = -x * sin(ptr->dy) + z * cos(ptr->dy);
+// 		x = (*(ptr->map + i))->x;
+// 		z = (*(ptr->map + i))->z;
+// 		(*(ptr->map + i))->x = x * cos(ptr->dy) + z * sin(ptr->dy);
+// 		(*(ptr->map + i))->z = -x * sin(ptr->dy) + z * cos(ptr->dy);
 
-		x = (*(ptr->map + i))->x;
-		y = (*(ptr->map + i))->y;
-		(*(ptr->map + i))->x = x * cos(ptr->dz) - y * sin(ptr->dz);
-		(*(ptr->map + i))->y = x * sin(ptr->dz) + y * cos(ptr->dz);
-		++i;
-    }
-}
+// 		x = (*(ptr->map + i))->x;
+// 		y = (*(ptr->map + i))->y;
+// 		(*(ptr->map + i))->x = x * cos(ptr->dz) - y * sin(ptr->dz);
+// 		(*(ptr->map + i))->y = x * sin(ptr->dz) + y * cos(ptr->dz);
+// 		++i;
+//     }
+// }

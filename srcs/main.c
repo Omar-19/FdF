@@ -44,9 +44,9 @@ int		createImage(t_mlx *ptr)
 	ptr->mlx_ptr = mlx_init();
 	ptr->win_ptr =  mlx_new_window(ptr->mlx_ptr, WIDTH, HEIGHT, "FdF project");
 	create_mlxImg(ptr);
-	// lst_map_p(ptr);
+	lst_map_p(ptr);
 	// обработка клавиатуры
-	// mlx_hook(ptr->win_ptr, 2, 0, key_press, ptr);
+	mlx_hook(ptr->win_ptr, 2, 0, key_press, ptr);
 	// create_mlxImg(ptr);
 	// drawGrid_1(ptr);
 	// draw_line(ptr->pix_m, 50, 50, 500, 150);
@@ -68,14 +68,16 @@ int		main(int argc, char **argv)
 	t_strm	*head_s;
 	t_strm	*tmp;
 
+	// ptr.dx = 0;
+	// ptr.dy = 0;
+	// ptr.dz = 0;
 	if (argc != 2)
 		return (0);
 	ptr.color1 = RED;
 	file.fd = open(argv[1], O_RDONLY);
 	readMap(&ptr, &file, &head_s, &tmp);
 	createMap(&ptr, &file, &head_s, &tmp);
-	// writeMatrix(ptr);
-	// createImage(&ptr);
+	createImage(&ptr);
 	// printf("x = %d\n", (*(ptr.map + 1))->left->x);
 	return (0);
 }

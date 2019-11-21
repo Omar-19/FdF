@@ -52,6 +52,7 @@ int		*create_array(char *av, int size)
 void	readMap(t_mlx *ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 {
 	file->res = get_next_line(file->fd, &(file->str));
+	free((file->str));
 	*head_s = create_el(file->str);
 	ptr->size_x = check_ch((*head_s)->s, ' ');
 	*tmp = *head_s;
@@ -59,10 +60,23 @@ void	readMap(t_mlx *ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 	{
 		++(ptr->size_y);
 		file->res = get_next_line(file->fd, &(file->str));
+		if (!(*(file->str)))
+		{
+			free((file->str));
+			break;
+		}
 		// printf("%s\n", file->str);
 		(*tmp)->next = create_el(file->str);
+		free((file->str));
 		*tmp = (*tmp)->next;
 	}
+}
+
+t_point	*return_l(t_point *head, int i)
+{
+	while (i-- > 0)
+		head = head->next;
+	return (head);
 }
 
 void	links_map(t_mlx	*ptr)
@@ -70,26 +84,33 @@ void	links_map(t_mlx	*ptr)
 	int	i;
 	t_point *l;
 	t_point	*b;
-	int k;
+	t_point	*tmp;
 
 	i = 0;
-	k = 0;
-	// printf("%d %d\n", ptr->size_x, ptr->size_y);
-	while (i < ptr->size_x * ptr->size_y)
+	tmp = ptr->map;
+	while (tmp)
 	{
 		if (i < ptr->size_x)
 			b = NULL;
 		else
-			b = *(ptr->map + i - ptr->size_x);
+			b = return_l(ptr->map, i - ptr->size_x);
 		if (!i || !((i) % ptr->size_x))
+		{
+			// printf("i = %d\n", i);
 			l = NULL;
+		}
 		else
-			l = *(ptr->map + i - 1);
-		(*(ptr->map + i))->top = b;
-		(*(ptr->map + i))->left = l;
+		{
+			// printf("ilef = %d\n", i);
+			l = return_l(ptr->map, i - 1);
+			// printf("ilef = %p\n", l);
+			// printf("x = %d\n", l->z);
+		}
+		tmp->top = b;
+		tmp->left = l; 
+		tmp = tmp->next;
 		i++;
-	}
-	
+	}	
 }
 
 t_point	*creat_el(int x, int y, int z)
@@ -109,22 +130,32 @@ t_point	*creat_el(int x, int y, int z)
 void	createMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 {
 	int		i;
-	int		j;
 	int		*l;
 	int		k;
+	int		j;
+	t_point *r;
 
 	k = 0;
 	i = 0;
 	j = 0;
-	ptr->map = (t_point**)malloc(sizeof(t_point*) * ptr->size_y * ptr->size_x);
 	*tmp = *head_s;
+	// ptr->map = r;
 	while (*tmp)
 	{
 		l = create_array((*tmp)->s, ptr->size_x);
 		i = 0;
 		while (i < ptr->size_x)
 		{
-			*(ptr->map + i + k) = creat_el(40 * i, (40 * k) / ptr->size_x, l[i]);
+			if (j++ == 0)
+			{
+				ptr->map = creat_el(40 * i, (40 * k) / ptr->size_x, l[i]);
+				r = (ptr->map);
+			}
+			else
+			{
+				r->next = creat_el(40 * i, (40 * k) / ptr->size_x, l[i]);
+				r = r->next;
+			}
 			i++;
 		}
 		k += ptr->size_x;

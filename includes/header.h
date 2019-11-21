@@ -32,6 +32,7 @@ typedef struct 		s_point
 	int	col;
 	struct 		s_point *top;
 	struct 		s_point *left;
+	struct 		s_point *next;
 }					t_point;
 
 typedef struct		s_mlx
@@ -42,16 +43,16 @@ typedef struct		s_mlx
 	int				size_x;
 	int				size_y;
 	int				*pix_m;
-	t_point			**map;
+	t_point			*map;
 	int				pix_m_size; // длина массива пикселей
 	int				bits_per_pixel; // ???
 	int				size_line; // размер линии, связующей вершины
 	int				endian; // ???
 	int				color1;
 	int				color2;
-	float			dx;
-	float			dy;
-	float			dz;
+	// int dx;
+	// int dy;
+	// int dz;
 }					t_mlx;
 
 typedef struct 		s_line
