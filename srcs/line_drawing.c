@@ -20,7 +20,7 @@ void	line_y(t_mlx pr, t_line ptr)
 	{
 		// printf("col = %d i = %d\n", (pr.color1 + i * 2), i);
 		if (ptr.y0 < HEIGHT && ptr.y0 >= 0 && ptr.x0 < WIDTH && ptr.x0 >= 0)
-			pr.pix_m[(int)ptr.y0 * WIDTH + (int)ptr.x0 + 1] = pr.color1;// - i * 2;// + (i++) * pr.g;
+			pr.pix_m[(int)ptr.y0 * WIDTH + (int)ptr.x0] = pr.color1;// - i * 2;// + (i++) * pr.g;
 		er += tmp;
 		++i;
 		if (er >= 0.5)
@@ -51,7 +51,7 @@ void	line_x(t_mlx pr, t_line ptr)
 	while (ptr.x0 <= ptr.x)
 	{
 		if (ptr.x0 < HEIGHT && ptr.x0 >= 0 && ptr.y0 < WIDTH && ptr.y0 >= 0)
-			pr.pix_m[(int)ptr.y0 * WIDTH + (int)ptr.x0 + 1] = pr.color1;// + i;// + (i++) * pr.g;
+			pr.pix_m[(int)ptr.y0 * WIDTH + (int)ptr.x0] = pr.color1;// + i;// + (i++) * pr.g;
 		er += tmp;
 		if (er >= 0.5)
 		{
@@ -68,10 +68,10 @@ void	draw_line(t_mlx pr, t_point *t1, t_point *t2)
 	float tmp;
 	t_line ptr;
 
-	ptr.x0 = (float)(t1->x) + 300;
-	ptr.x = (float)(t2->x) + 300;
-	ptr.y0 = (float)(t1->y) + 300;
-	ptr.y = (float)(t2->y) + 300;
+	ptr.x0 = (float)(t1->x) + WIDTH/2;
+	ptr.x = (float)(t2->x) + WIDTH/2;
+	ptr.y0 = (float)(t1->y) + HEIGHT/2;
+	ptr.y = (float)(t2->y) + HEIGHT/2;
 	ptr.z = (float)(t2->z);
 	// printf();
 	// if ((ptr.x0 > WIDTH || ptr.x > WIDTH) || (ptr.x0 < 0 || ptr.x < 0)
