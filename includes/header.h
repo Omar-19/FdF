@@ -106,7 +106,7 @@ void				draw_line(t_mlx pr, t_point *t1, t_point *t2);
 void				line_y(t_mlx pr, t_line ptr);
 void				line_x(t_mlx pr, t_line ptr);
 void				lst_x_sligt(t_mlx *ptr);
-void				resize_map(t_mlx *ptr);
+void				resize_map(t_mlx *ptr, int l);
 // void	draw_line(int *pix, float x0, float y0, float x1, float y1);
 
 
