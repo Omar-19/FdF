@@ -59,6 +59,38 @@ int		createImage(t_mlx *ptr)
 	return (0);
 }
 
+void	resize_map(t_mlx *ptr)
+{
+	t_point	*tmp;
+	int		i;
+	int		f;
+
+	f = 1;
+	i = 0;
+	tmp = ptr->map;
+	while (tmp)
+	{
+		// tmp->x0 = (tmp->x + ptr->size_line * i > 10) ? tmp->x + ptr->size_line * i : 10;
+		if (f)
+		{
+			tmp->x0 = tmp->x + ptr->size_line * i;
+			tmp->y0 = tmp->y + ptr->size_line * i;
+		}
+		// if (!i && (tmp->x0 < 0 || tmp->y0 < 0))
+		// {
+		// 	f = 0;
+		// 	tmp->x0 = 0;
+		// 	tmp->y0 = 0;
+		// }
+		// if (!f)
+		// {
+		// 	tmp->x0 = 0;
+		// 	tmp->y0 = 0;
+		// }
+		tmp = tmp->next;
+	}
+}
+
 int		main(int argc, char **argv)
 {
 	t_mlx	ptr;
@@ -66,9 +98,7 @@ int		main(int argc, char **argv)
 	t_strm	*head_s;
 	t_strm	*tmp;
 
-	// ptr.dx = 0;
-	// ptr.dy = 0;
-	// ptr.dz = 0;
+	ptr.size_line = 0;
 	if (argc != 2)
 		return (0);
 	ptr.color1 = RED;
