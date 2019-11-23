@@ -10,9 +10,13 @@ void grad(t_mlx *ptr, int d)
 		(tmp->col) ? (tmp->z0 += d) : 0;
 		tmp = tmp->next; 
 	}
-	ptr->zmx += d;
-	ptr->zmn += d;
-	ptr->g = fabsf(fabsf((float)YELLOW - (float)RED)/ fabsf((float)ptr->zmx - (float)ptr->zmn));
+	// ptr->zmxp += d;
+	// ptr->zmxn += d;
+	// (ptr->zmn) ? (ptr->zmn += d) : 0;
+	// if (abs(ptr->zmxp) > abs(ptr->zmxn))
+	// 	ptr->g = fabsf(fabsf((float)YELLOW - (float)RED)/ fabsf((float)ptr->zmxp - (float)ptr->zmn));
+	// else if (abs(ptr->zmxp) < abs(ptr->zmxn))
+	// 	ptr->g = fabsf(fabsf((float)YELLOW - (float)RED)/ fabsf((float)ptr->zmn - (float)ptr->zmxp));
 }
 
 int	key_press(int key, void *param)

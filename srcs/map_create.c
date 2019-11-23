@@ -149,14 +149,16 @@ void	createMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 			if (j++ == 0)
 			{
 				ptr->map = creat_el(40 * i, (40 * k) / ptr->size_x, l[i]);
-				ptr->zmn = l[i];
-				ptr->zmx = l[i];
+				// ptr->zmn = l[i];
+				// ptr->zmxp = l[i];
+				// ptr->zmxn = l[i];
 				r = (ptr->map);
 			}
 			else
 			{
-				(l[i] > ptr->zmx) ? (ptr->zmx = l[i]) : 0;
-				(l[i] < ptr->zmn) ? (ptr->zmn = l[i]) : 0;
+				// (abs(l[i]) > ptr->zmxp && l[i] > 0) ? (ptr->zmxp = l[i]) : 0;
+				// (abs(l[i]) > abs(ptr->zmxn) && l[i] < 0) ? (ptr->zmxn = l[i]) : 0;
+				// (abs(l[i]) < abs(ptr->zmn)) ? (ptr->zmn = l[i]) : 0;
 				r->next = creat_el(40 * i, (40 * k) / ptr->size_x, l[i]);
 				r = r->next;
 			}
