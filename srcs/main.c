@@ -70,6 +70,7 @@ void	resize_map(t_mlx *ptr, int l)
 	i = 0;
 	j = -1;
 	tmp = ptr->map;
+	ptr->size_line += l;
 	if (ptr->size_line < 0)
 	{
 		ptr->size_line = 0;
@@ -77,24 +78,12 @@ void	resize_map(t_mlx *ptr, int l)
 	}
 	while (tmp)
 	{
-		// tmp->x0 = (tmp->x + ptr->size_line * i > 10) ? tmp->x + ptr->size_line * i : 10;
 		(i % ptr->size_x == 0) ? (++j) : 0;
 		if (f)
 		{
-			// printf("tmp->x0: %d -> ", tmp->x0);
 			tmp->x0 = tmp->x0 + l * (i % ptr->size_x);
-			// printf("%d\n", tmp->x0);
-			// printf("tmp->y0: %d -> ", tmp->y0);
 			tmp->y0 = tmp->y0 + l * j;
-			// printf("%d\n", tmp->y0);
 		}
-		// ()
-		// if ()
-		// {
-		// 	f = 0;
-		// 	tmp->x0 = 0;
-		// 	tmp->y0 = 0;
-		// }
 		if (!f)
 		{
 			tmp->x0 = 0;

@@ -44,7 +44,7 @@ int	key_press(int key, void *param)
 	}
 	if (key == NUM_PAD_PLUS)
 	{
-		ptr->size_line += 10;
+		// ptr->size_line += 10;
 		resize_map(ptr, 1);
         // mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);
         create_mlxImg(ptr);
@@ -59,7 +59,7 @@ int	key_press(int key, void *param)
 	}
 	if (key == NUM_PAD_MINUS)
 	{
-		ptr->size_line -= 10;
+		// ptr->size_line -= 10;
 		resize_map(ptr, -1);
 		create_mlxImg(ptr);
 		// mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);
