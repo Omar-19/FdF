@@ -34,7 +34,7 @@ int	key_press(int key, void *param)
 		(key == NUM_PAD_6) ? ptr->dy += 0.2 : 0;
 		(key == NUM_PAD_2) ? ptr->dx -= 0.2 : 0;
 		(key == NUM_PAD_8) ? ptr->dx += 0.2 : 0;
-		(key == NUM_PAD_7) ? ptr->dy -= 0.2 : 0;
+		(key == NUM_PAD_7) ? ptr->dz -= 0.2 : 0;
 		(key == NUM_PAD_9) ? ptr->dz += 0.2 : 0;
 		create_mlxImg(ptr);
 	}

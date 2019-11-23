@@ -57,16 +57,17 @@ void	lst_x_sligt(t_mlx *ptr)
     while (tmp)
     {
 		tmp->x = tmp->x0;
-		tmp->y = (tmp->y0) * cos(ptr->dx) + (tmp->z0) * sin(ptr->dx);
-		tmp->z = -(tmp->y0) * sin(ptr->dx) + (tmp->z0) * cos(ptr->dx);
+		y = tmp->y0 - ptr->size_y * 40 / 2;
+		tmp->y = (y) * cos(ptr->dx) + (tmp->z0) * sin(ptr->dx);
+		tmp->z = -(y) * sin(ptr->dx) + (tmp->z0) * cos(ptr->dx);
 
-		x = tmp->x;
+		x = tmp->x - ptr->size_x * 40 / 2;
 		z = tmp->z;
 		tmp->x = x * cos(ptr->dy) + z * sin(ptr->dy);
 		tmp->z = -x * sin(ptr->dy) + z * cos(ptr->dy);
 
-		x = tmp->x;
-		y = tmp->y;
+		x = tmp->x; //- ptr->size_x * 40 / 2;
+		y = tmp->y; //- ptr->size_y * 40 / 2;
 		tmp->x = x * cos(ptr->dz) - y * sin(ptr->dz);
 		tmp->y = x * sin(ptr->dz) + y * cos(ptr->dz);
 		tmp = tmp->next;
