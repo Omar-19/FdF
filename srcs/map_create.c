@@ -149,6 +149,8 @@ void	createMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 			if (j++ == 0)
 			{
 				ptr->map = creat_el(40 * i, (40 * k) / ptr->size_x, l[i]);
+				ptr->z_max = &(ptr->map->z0);
+				ptr->z_min = &(ptr->map->z0);
 				// ptr->zmn = l[i];
 				// ptr->zmxp = l[i];
 				// ptr->zmxn = l[i];
@@ -161,6 +163,9 @@ void	createMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 				// (abs(l[i]) < abs(ptr->zmn)) ? (ptr->zmn = l[i]) : 0;
 				r->next = creat_el(40 * i, (40 * k) / ptr->size_x, l[i]);
 				r = r->next;
+				// ptr->z_max = &(ptr->map->z0);
+				(r->z0 > *(ptr->z_max)) ? (ptr->z_max = &(r->z0)) : 0;
+				(r->z0 < *(ptr->z_min)) ? (ptr->z_min = &(r->z0)) : 0;
 			}
 			i++;
 		}
@@ -168,4 +173,5 @@ void	createMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 		(*tmp) = (*tmp)->next;
 	}
 	links_map(ptr);
+	printf("z_min = %d    z_max = %d\n", *ptr->z_min, *ptr->z_max);
 }
