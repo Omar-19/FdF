@@ -1,0 +1,2306 @@
+27
+color 0
+x y 40 0
+color 0
+x y 80 0
+color 0
+x y 120 0
+color 0
+x y 160 0
+color 0
+x y 200 0
+color 0
+x y 240 0
+color 0
+x y 280 0
+color 0
+x y 320 0
+color 0
+x y 360 0
+color 0
+x y 400 0
+color 0
+x y 440 0
+color 0
+x y 480 0
+color 0
+x y 520 0
+color 0
+x y 560 0
+color 0
+x y 600 0
+color 0
+x y 640 0
+color 0
+x y 680 0
+color 0
+x y 720 0
+color 0
+x y 760 0
+color 0
+x y 800 0
+color 0
+x y 840 0
+color 0
+x y 880 0
+color 0
+x y 920 0
+color 0
+x y 960 0
+color 0
+x y 1000 0
+color 0
+x y 1040 0
+color 0
+x y 0 40
+color 0
+x y 40 40
+color 0
+x y 80 40
+color 0
+x y 120 40
+color 0
+x y 160 40
+color 0
+x y 200 40
+color 0
+x y 240 40
+color 0
+x y 280 40
+color 0
+x y 320 40
+color 0
+x y 360 40
+color 0
+x y 400 40
+color 0
+x y 440 40
+color 0
+x y 480 40
+color 0
+x y 520 40
+color 0
+x y 560 40
+color 0
+x y 600 40
+color 0
+x y 640 40
+color 0
+x y 680 40
+color 0
+x y 720 40
+color 0
+x y 760 40
+color 0
+x y 800 40
+color 0
+x y 840 40
+color 0
+x y 880 40
+color 0
+x y 920 40
+color 0
+x y 960 40
+color 0
+x y 1000 40
+color 0
+x y 1040 40
+color 0
+x y 0 80
+color 0
+x y 40 80
+color 0
+x y 80 80
+color 0
+x y 120 80
+color 0
+x y 160 80
+color 0
+x y 200 80
+color 0
+x y 240 80
+color 0
+x y 280 80
+color 0
+x y 320 80
+color 0
+x y 360 80
+color 0
+x y 400 80
+color 0
+x y 440 80
+color 0
+x y 480 80
+color 0
+x y 520 80
+color 0
+x y 560 80
+color 0
+x y 600 80
+color 0
+x y 640 80
+color 0
+x y 680 80
+color 0
+x y 720 80
+color 0
+x y 760 80
+color 0
+x y 800 80
+color 0
+x y 840 80
+color 0
+x y 880 80
+color 0
+x y 920 80
+color 0
+x y 960 80
+color 0
+x y 1000 80
+color 0
+x y 1040 80
+color 0
+x y 0 120
+color 0
+x y 40 120
+color 0
+x y 80 120
+color 0
+x y 120 120
+color 0
+x y 160 120
+color 0
+x y 200 120
+color 0
+x y 240 120
+color 0
+x y 280 120
+color 0
+x y 320 120
+color 0
+x y 360 120
+color 0
+x y 400 120
+color 0
+x y 440 120
+color 0
+x y 480 120
+color 0
+x y 520 120
+color 0
+x y 560 120
+color 0
+x y 600 120
+color 0
+x y 640 120
+color 0
+x y 680 120
+color 0
+x y 720 120
+color 0
+x y 760 120
+color 0
+x y 800 120
+color 0
+x y 840 120
+color 0
+x y 880 120
+color 0
+x y 920 120
+color 0
+x y 960 120
+color 0
+x y 1000 120
+color 0
+x y 1040 120
+color 0
+x y 0 160
+color 0
+x y 40 160
+color 0
+x y 80 160
+color 0
+x y 120 160
+color 0
+x y 160 160
+color 0
+x y 200 160
+color 0
+x y 240 160
+color 0
+x y 280 160
+color 0
+x y 320 160
+color 0
+x y 360 160
+color 0
+x y 400 160
+color 0
+x y 440 160
+color 0
+x y 480 160
+color 0
+x y 520 160
+color 0
+x y 560 160
+color 0
+x y 600 160
+color 0
+x y 640 160
+color 0
+x y 680 160
+color 0
+x y 720 160
+color 0
+x y 760 160
+color 0
+x y 800 160
+color 0
+x y 840 160
+color 0
+x y 880 160
+color 0
+x y 920 160
+color 0
+x y 960 160
+color 0
+x y 1000 160
+color 0
+x y 1040 160
+color 0
+x y 0 200
+color 0
+x y 40 200
+color 0
+x y 80 200
+color 0
+x y 120 200
+color 0
+x y 160 200
+color 0
+x y 200 200
+color 0
+x y 240 200
+color 0
+x y 280 200
+color 0
+x y 320 200
+color 0
+x y 360 200
+color 0
+x y 400 200
+color 0
+x y 440 200
+color 0
+x y 480 200
+color 0
+x y 520 200
+color 0
+x y 560 200
+color 0
+x y 600 200
+color 0
+x y 640 200
+color 0
+x y 680 200
+color 0
+x y 720 200
+color 0
+x y 760 200
+color 0
+x y 800 200
+color 0
+x y 840 200
+color 0
+x y 880 200
+color 0
+x y 920 200
+color 0
+x y 960 200
+color 0
+x y 1000 200
+color 0
+x y 1040 200
+color 0
+x y 0 240
+color 0
+x y 40 240
+color 0
+x y 80 240
+color 0
+x y 120 240
+color 0
+x y 160 240
+color 0
+x y 200 240
+color 0
+x y 240 240
+color 0
+x y 280 240
+color 0
+x y 320 240
+color 0
+x y 360 240
+color 0
+x y 400 240
+color 0
+x y 440 240
+color 0
+x y 480 240
+color 0
+x y 520 240
+color 0
+x y 560 240
+color 0
+x y 600 240
+color 0
+x y 640 240
+color 0
+x y 680 240
+color 0
+x y 720 240
+color 0
+x y 760 240
+color 0
+x y 800 240
+color 0
+x y 840 240
+color 0
+x y 880 240
+color 0
+x y 920 240
+color 0
+x y 960 240
+color 0
+x y 1000 240
+color 0
+x y 1040 240
+color 0
+x y 0 280
+color 0
+x y 40 280
+color 0
+x y 80 280
+color 0
+x y 120 280
+color 0
+x y 160 280
+color 0
+x y 200 280
+color 0
+x y 240 280
+color 0
+x y 280 280
+color 0
+x y 320 280
+color 0
+x y 360 280
+color 0
+x y 400 280
+color 0
+x y 440 280
+color 0
+x y 480 280
+color 0
+x y 520 280
+color 0
+x y 560 280
+color 0
+x y 600 280
+color 0
+x y 640 280
+color 0
+x y 680 280
+color 0
+x y 720 280
+color 0
+x y 760 280
+color 0
+x y 800 280
+color 0
+x y 840 280
+color 0
+x y 880 280
+color 0
+x y 920 280
+color 0
+x y 960 280
+color 0
+x y 1000 280
+color 0
+x y 1040 280
+color 0
+x y 0 320
+color 0
+x y 40 320
+color 0
+x y 80 320
+color 0
+x y 120 320
+color 0
+x y 160 320
+color 0
+x y 200 320
+color 0
+x y 240 320
+color 0
+x y 280 320
+color 0
+x y 320 320
+color 0
+x y 360 320
+color 0
+x y 400 320
+color 0
+x y 440 320
+color 0
+x y 480 320
+color 0
+x y 520 320
+color 0
+x y 560 320
+color 0
+x y 600 320
+color 0
+x y 640 320
+color 0
+x y 680 320
+color 0
+x y 720 320
+color 0
+x y 760 320
+color 0
+x y 800 320
+color 0
+x y 840 320
+color 0
+x y 880 320
+color 0
+x y 920 320
+color 0
+x y 960 320
+color 0
+x y 1000 320
+color 0
+x y 1040 320
+color 0
+x y 0 360
+color 0
+x y 40 360
+color 0
+x y 80 360
+color 0
+x y 120 360
+color 0
+x y 160 360
+color 0
+x y 200 360
+color 0
+x y 240 360
+color 0
+x y 280 360
+color 0
+x y 320 360
+color 0
+x y 360 360
+color 0
+x y 400 360
+color 0
+x y 440 360
+color 0
+x y 480 360
+color 0
+x y 520 360
+color 0
+x y 560 360
+color 0
+x y 600 360
+color 0
+x y 640 360
+color 0
+x y 680 360
+color 0
+x y 720 360
+color 0
+x y 760 360
+color 0
+x y 800 360
+color 0
+x y 840 360
+color 0
+x y 880 360
+color 0
+x y 920 360
+color 0
+x y 960 360
+color 0
+x y 1000 360
+color 0
+x y 1040 360
+color 0
+x y 0 400
+color 0
+x y 40 400
+color 0
+x y 80 400
+color 0
+x y 120 400
+color 0
+x y 160 400
+color 0
+x y 200 400
+color 0
+x y 240 400
+color 0
+x y 280 400
+color 0
+x y 320 400
+color 0
+x y 360 400
+color 0
+x y 400 400
+color 0
+x y 440 400
+color 0
+x y 480 400
+color 0
+x y 520 400
+color 0
+x y 560 400
+color 0
+x y 600 400
+color 0
+x y 640 400
+color 0
+x y 680 400
+color 0
+x y 720 400
+color 0
+x y 760 400
+color 0
+x y 800 400
+color 0
+x y 840 400
+color 0
+x y 880 400
+color 0
+x y 920 400
+color 0
+x y 960 400
+color 0
+x y 1000 400
+color 0
+x y 1040 400
+color 0
+x y 0 440
+color 0
+x y 40 440
+color 0
+x y 80 440
+color 0
+x y 120 440
+color 0
+x y 160 440
+color 0
+x y 200 440
+color 0
+x y 240 440
+color 0
+x y 280 440
+color 0
+x y 320 440
+color 0
+x y 360 440
+color 0
+x y 400 440
+color 0
+x y 440 440
+color 0
+x y 480 440
+color 0
+x y 520 440
+color 0
+x y 560 440
+color 0
+x y 600 440
+color 0
+x y 640 440
+color 0
+x y 680 440
+color 0
+x y 720 440
+color 0
+x y 760 440
+color 0
+x y 800 440
+color 0
+x y 840 440
+color 0
+x y 880 440
+color 0
+x y 920 440
+color 0
+x y 960 440
+color 0
+x y 1000 440
+color 0
+x y 1040 440
+color 0
+x y 0 480
+color 0
+x y 40 480
+color 0
+x y 80 480
+color 0
+x y 120 480
+color 0
+x y 160 480
+color 0
+x y 200 480
+color 0
+x y 240 480
+color 0
+x y 280 480
+color 0
+x y 320 480
+color 0
+x y 360 480
+color 0
+x y 400 480
+color 0
+x y 440 480
+color 0
+x y 480 480
+color 0
+x y 520 480
+color 0
+x y 560 480
+color 0
+x y 600 480
+color 0
+x y 640 480
+color 0
+x y 680 480
+color 0
+x y 720 480
+color 0
+x y 760 480
+color 0
+x y 800 480
+color 0
+x y 840 480
+color 0
+x y 880 480
+color 0
+x y 920 480
+color 0
+x y 960 480
+color 0
+x y 1000 480
+color 0
+x y 1040 480
+color 0
+x y 0 520
+color 0
+x y 40 520
+color 0
+x y 80 520
+color 0
+x y 120 520
+color 0
+x y 160 520
+color 0
+x y 200 520
+color 0
+x y 240 520
+color 0
+x y 280 520
+color 0
+x y 320 520
+color 0
+x y 360 520
+color 0
+x y 400 520
+color 0
+x y 440 520
+color 0
+x y 480 520
+color 0
+x y 520 520
+color 0
+x y 560 520
+color 0
+x y 600 520
+color 0
+x y 640 520
+color 0
+x y 680 520
+color 0
+x y 720 520
+color 0
+x y 760 520
+color 0
+x y 800 520
+color 0
+x y 840 520
+color 0
+x y 880 520
+color 0
+x y 920 520
+color 0
+x y 960 520
+color 0
+x y 1000 520
+color 0
+x y 1040 520
+color 0
+x y 0 560
+color 0
+x y 40 560
+color 0
+x y 80 560
+color 0
+x y 120 560
+color 0
+x y 160 560
+color 0
+x y 200 560
+color 0
+x y 240 560
+color 0
+x y 280 560
+color 0
+x y 320 560
+color 0
+x y 360 560
+color 0
+x y 400 560
+color 0
+x y 440 560
+color 0
+x y 480 560
+color 0
+x y 520 560
+color 0
+x y 560 560
+color 0
+x y 600 560
+color 0
+x y 640 560
+color 0
+x y 680 560
+color 0
+x y 720 560
+color 0
+x y 760 560
+color 0
+x y 800 560
+color 0
+x y 840 560
+color 0
+x y 880 560
+color 0
+x y 920 560
+color 0
+x y 960 560
+color 0
+x y 1000 560
+color 0
+x y 1040 560
+color 0
+x y 0 600
+color 0
+x y 40 600
+color 0
+x y 80 600
+color 0
+x y 120 600
+color 0
+x y 160 600
+color 0
+x y 200 600
+color 0
+x y 240 600
+color 0
+x y 280 600
+color 0
+x y 320 600
+color 0
+x y 360 600
+color 0
+x y 400 600
+color 0
+x y 440 600
+color 0
+x y 480 600
+color 0
+x y 520 600
+color 0
+x y 560 600
+color 0
+x y 600 600
+color 0
+x y 640 600
+color 0
+x y 680 600
+color 0
+x y 720 600
+color 0
+x y 760 600
+color 0
+x y 800 600
+color 0
+x y 840 600
+color 0
+x y 880 600
+color 0
+x y 920 600
+color 0
+x y 960 600
+color 0
+x y 1000 600
+color 0
+x y 1040 600
+color 0
+x y 0 640
+color 0
+x y 40 640
+color 0
+x y 80 640
+color 0
+x y 120 640
+color 0
+x y 160 640
+color 0
+x y 200 640
+color 0
+x y 240 640
+color 0
+x y 280 640
+color 0
+x y 320 640
+color 0
+x y 360 640
+color 0
+x y 400 640
+color 0
+x y 440 640
+color 16777215
+x y 480 640
+color 16777215
+x y 520 640
+color 16777215
+x y 560 640
+color 0
+x y 600 640
+color 0
+x y 640 640
+color 0
+x y 680 640
+color 0
+x y 720 640
+color 0
+x y 760 640
+color 0
+x y 800 640
+color 0
+x y 840 640
+color 0
+x y 880 640
+color 0
+x y 920 640
+color 0
+x y 960 640
+color 0
+x y 1000 640
+color 0
+x y 1040 640
+color 0
+x y 0 680
+color 0
+x y 40 680
+color 0
+x y 80 680
+color 0
+x y 120 680
+color 0
+x y 160 680
+color 0
+x y 200 680
+color 0
+x y 240 680
+color 0
+x y 280 680
+color 0
+x y 320 680
+color 0
+x y 360 680
+color 0
+x y 400 680
+color 0
+x y 440 680
+color 16777215
+x y 480 680
+color 16777215
+x y 520 680
+color 16777215
+x y 560 680
+color 0
+x y 600 680
+color 0
+x y 640 680
+color 0
+x y 680 680
+color 0
+x y 720 680
+color 0
+x y 760 680
+color 0
+x y 800 680
+color 0
+x y 840 680
+color 0
+x y 880 680
+color 0
+x y 920 680
+color 0
+x y 960 680
+color 0
+x y 1000 680
+color 0
+x y 1040 680
+color 0
+x y 0 720
+color 0
+x y 40 720
+color 0
+x y 80 720
+color 0
+x y 120 720
+color 0
+x y 160 720
+color 0
+x y 200 720
+color 0
+x y 240 720
+color 0
+x y 280 720
+color 0
+x y 320 720
+color 0
+x y 360 720
+color 0
+x y 400 720
+color 0
+x y 440 720
+color 16777215
+x y 480 720
+color 16777215
+x y 520 720
+color 16777215
+x y 560 720
+color 0
+x y 600 720
+color 0
+x y 640 720
+color 0
+x y 680 720
+color 0
+x y 720 720
+color 0
+x y 760 720
+color 0
+x y 800 720
+color 0
+x y 840 720
+color 0
+x y 880 720
+color 0
+x y 920 720
+color 0
+x y 960 720
+color 0
+x y 1000 720
+color 0
+x y 1040 720
+color 0
+x y 0 760
+color 0
+x y 40 760
+color 0
+x y 80 760
+color 0
+x y 120 760
+color 0
+x y 160 760
+color 0
+x y 200 760
+color 0
+x y 240 760
+color 0
+x y 280 760
+color 0
+x y 320 760
+color 0
+x y 360 760
+color 0
+x y 400 760
+color 0
+x y 440 760
+color 16777215
+x y 480 760
+color 16777215
+x y 520 760
+color 16777215
+x y 560 760
+color 0
+x y 600 760
+color 0
+x y 640 760
+color 0
+x y 680 760
+color 0
+x y 720 760
+color 0
+x y 760 760
+color 0
+x y 800 760
+color 0
+x y 840 760
+color 0
+x y 880 760
+color 0
+x y 920 760
+color 0
+x y 960 760
+color 0
+x y 1000 760
+color 0
+x y 1040 760
+color 0
+x y 0 800
+color 0
+x y 40 800
+color 0
+x y 80 800
+color 0
+x y 120 800
+color 0
+x y 160 800
+color 0
+x y 200 800
+color 0
+x y 240 800
+color 0
+x y 280 800
+color 0
+x y 320 800
+color 0
+x y 360 800
+color 0
+x y 400 800
+color 0
+x y 440 800
+color 16777215
+x y 480 800
+color 16777215
+x y 520 800
+color 16777215
+x y 560 800
+color 0
+x y 600 800
+color 0
+x y 640 800
+color 0
+x y 680 800
+color 0
+x y 720 800
+color 0
+x y 760 800
+color 0
+x y 800 800
+color 0
+x y 840 800
+color 0
+x y 880 800
+color 0
+x y 920 800
+color 0
+x y 960 800
+color 0
+x y 1000 800
+color 0
+x y 1040 800
+color 0
+x y 0 840
+color 0
+x y 40 840
+color 0
+x y 80 840
+color 0
+x y 120 840
+color 0
+x y 160 840
+color 0
+x y 200 840
+color 0
+x y 240 840
+color 0
+x y 280 840
+color 0
+x y 320 840
+color 0
+x y 360 840
+color 0
+x y 400 840
+color 0
+x y 440 840
+color 16777215
+x y 480 840
+color 16777215
+x y 520 840
+color 16777215
+x y 560 840
+color 0
+x y 600 840
+color 0
+x y 640 840
+color 0
+x y 680 840
+color 0
+x y 720 840
+color 0
+x y 760 840
+color 0
+x y 800 840
+color 0
+x y 840 840
+color 0
+x y 880 840
+color 0
+x y 920 840
+color 0
+x y 960 840
+color 0
+x y 1000 840
+color 0
+x y 1040 840
+color 0
+x y 0 880
+color 0
+x y 40 880
+color 0
+x y 80 880
+color 0
+x y 120 880
+color 0
+x y 160 880
+color 0
+x y 200 880
+color 0
+x y 240 880
+color 0
+x y 280 880
+color 0
+x y 320 880
+color 0
+x y 360 880
+color 0
+x y 400 880
+color 0
+x y 440 880
+color 0
+x y 480 880
+color 0
+x y 520 880
+color 0
+x y 560 880
+color 0
+x y 600 880
+color 0
+x y 640 880
+color 0
+x y 680 880
+color 0
+x y 720 880
+color 0
+x y 760 880
+color 0
+x y 800 880
+color 0
+x y 840 880
+color 0
+x y 880 880
+color 0
+x y 920 880
+color 0
+x y 960 880
+color 0
+x y 1000 880
+color 0
+x y 1040 880
+color 0
+x y 0 920
+color 0
+x y 40 920
+color 0
+x y 80 920
+color 0
+x y 120 920
+color 0
+x y 160 920
+color 0
+x y 200 920
+color 0
+x y 240 920
+color 0
+x y 280 920
+color 0
+x y 320 920
+color 0
+x y 360 920
+color 0
+x y 400 920
+color 0
+x y 440 920
+color 0
+x y 480 920
+color 0
+x y 520 920
+color 0
+x y 560 920
+color 0
+x y 600 920
+color 0
+x y 640 920
+color 0
+x y 680 920
+color 0
+x y 720 920
+color 0
+x y 760 920
+color 0
+x y 800 920
+color 0
+x y 840 920
+color 0
+x y 880 920
+color 0
+x y 920 920
+color 0
+x y 960 920
+color 0
+x y 1000 920
+color 0
+x y 1040 920
+color 0
+x y 0 960
+color 0
+x y 40 960
+color 0
+x y 80 960
+color 0
+x y 120 960
+color 0
+x y 160 960
+color 0
+x y 200 960
+color 0
+x y 240 960
+color 0
+x y 280 960
+color 0
+x y 320 960
+color 0
+x y 360 960
+color 0
+x y 400 960
+color 0
+x y 440 960
+color 0
+x y 480 960
+color 0
+x y 520 960
+color 0
+x y 560 960
+color 0
+x y 600 960
+color 0
+x y 640 960
+color 0
+x y 680 960
+color 0
+x y 720 960
+color 0
+x y 760 960
+color 0
+x y 800 960
+color 0
+x y 840 960
+color 0
+x y 880 960
+color 0
+x y 920 960
+color 0
+x y 960 960
+color 0
+x y 1000 960
+color 0
+x y 1040 960
+color 0
+x y 0 1000
+color 0
+x y 40 1000
+color 0
+x y 80 1000
+color 0
+x y 120 1000
+color 0
+x y 160 1000
+color 0
+x y 200 1000
+color 0
+x y 240 1000
+color 0
+x y 280 1000
+color 0
+x y 320 1000
+color 0
+x y 360 1000
+color 0
+x y 400 1000
+color 0
+x y 440 1000
+color 0
+x y 480 1000
+color 0
+x y 520 1000
+color 0
+x y 560 1000
+color 0
+x y 600 1000
+color 0
+x y 640 1000
+color 0
+x y 680 1000
+color 0
+x y 720 1000
+color 0
+x y 760 1000
+color 0
+x y 800 1000
+color 0
+x y 840 1000
+color 0
+x y 880 1000
+color 0
+x y 920 1000
+color 0
+x y 960 1000
+color 0
+x y 1000 1000
+color 0
+x y 1040 1000
+color 0
+x y 0 1040
+color 0
+x y 40 1040
+color 0
+x y 80 1040
+color 0
+x y 120 1040
+color 0
+x y 160 1040
+color 0
+x y 200 1040
+color 0
+x y 240 1040
+color 0
+x y 280 1040
+color 0
+x y 320 1040
+color 0
+x y 360 1040
+color 0
+x y 400 1040
+color 0
+x y 440 1040
+color 0
+x y 480 1040
+color 0
+x y 520 1040
+color 0
+x y 560 1040
+color 0
+x y 600 1040
+color 0
+x y 640 1040
+color 0
+x y 680 1040
+color 0
+x y 720 1040
+color 0
+x y 760 1040
+color 0
+x y 800 1040
+color 0
+x y 840 1040
+color 0
+x y 880 1040
+color 0
+x y 920 1040
+color 0
+x y 960 1040
+color 0
+x y 1000 1040
+color 0
+x y 1040 1040
+color 0
+x y 0 1080
+color 0
+x y 40 1080
+color 0
+x y 80 1080
+color 0
+x y 120 1080
+color 0
+x y 160 1080
+color 0
+x y 200 1080
+color 0
+x y 240 1080
+color 0
+x y 280 1080
+color 0
+x y 320 1080
+color 0
+x y 360 1080
+color 0
+x y 400 1080
+color 0
+x y 440 1080
+color 0
+x y 480 1080
+color 0
+x y 520 1080
+color 0
+x y 560 1080
+color 0
+x y 600 1080
+color 0
+x y 640 1080
+color 0
+x y 680 1080
+color 0
+x y 720 1080
+color 0
+x y 760 1080
+color 0
+x y 800 1080
+color 0
+x y 840 1080
+color 0
+x y 880 1080
+color 0
+x y 920 1080
+color 0
+x y 960 1080
+color 0
+x y 1000 1080
+color 0
+x y 1040 1080
+color 0
+x y 0 1120
+color 0
+x y 40 1120
+color 0
+x y 80 1120
+color 0
+x y 120 1120
+color 0
+x y 160 1120
+color 0
+x y 200 1120
+color 0
+x y 240 1120
+color 0
+x y 280 1120
+color 0
+x y 320 1120
+color 0
+x y 360 1120
+color 0
+x y 400 1120
+color 0
+x y 440 1120
+color 0
+x y 480 1120
+color 0
+x y 520 1120
+color 0
+x y 560 1120
+color 0
+x y 600 1120
+color 0
+x y 640 1120
+color 0
+x y 680 1120
+color 0
+x y 720 1120
+color 0
+x y 760 1120
+color 0
+x y 800 1120
+color 0
+x y 840 1120
+color 0
+x y 880 1120
+color 0
+x y 920 1120
+color 0
+x y 960 1120
+color 0
+x y 1000 1120
+color 0
+x y 1040 1120
+color 0
+x y 0 1160
+color 0
+x y 40 1160
+color 0
+x y 80 1160
+color 0
+x y 120 1160
+color 0
+x y 160 1160
+color 0
+x y 200 1160
+color 0
+x y 240 1160
+color 0
+x y 280 1160
+color 0
+x y 320 1160
+color 0
+x y 360 1160
+color 0
+x y 400 1160
+color 0
+x y 440 1160
+color 0
+x y 480 1160
+color 0
+x y 520 1160
+color 0
+x y 560 1160
+color 0
+x y 600 1160
+color 0
+x y 640 1160
+color 0
+x y 680 1160
+color 0
+x y 720 1160
+color 0
+x y 760 1160
+color 0
+x y 800 1160
+color 0
+x y 840 1160
+color 0
+x y 880 1160
+color 0
+x y 920 1160
+color 0
+x y 960 1160
+color 0
+x y 1000 1160
+color 0
+x y 1040 1160
+color 0
+x y 0 1200
+color 0
+x y 40 1200
+color 0
+x y 80 1200
+color 0
+x y 120 1200
+color 0
+x y 160 1200
+color 0
+x y 200 1200
+color 0
+x y 240 1200
+color 0
+x y 280 1200
+color 0
+x y 320 1200
+color 0
+x y 360 1200
+color 0
+x y 400 1200
+color 0
+x y 440 1200
+color 0
+x y 480 1200
+color 0
+x y 520 1200
+color 0
+x y 560 1200
+color 0
+x y 600 1200
+color 0
+x y 640 1200
+color 0
+x y 680 1200
+color 0
+x y 720 1200
+color 0
+x y 760 1200
+color 0
+x y 800 1200
+color 0
+x y 840 1200
+color 0
+x y 880 1200
+color 0
+x y 920 1200
+color 0
+x y 960 1200
+color 0
+x y 1000 1200
+color 0
+x y 1040 1200
+color 0
+x y 0 1240
+color 0
+x y 40 1240
+color 0
+x y 80 1240
+color 0
+x y 120 1240
+color 0
+x y 160 1240
+color 0
+x y 200 1240
+color 0
+x y 240 1240
+color 0
+x y 280 1240
+color 0
+x y 320 1240
+color 0
+x y 360 1240
+color 0
+x y 400 1240
+color 0
+x y 440 1240
+color 0
+x y 480 1240
+color 0
+x y 520 1240
+color 0
+x y 560 1240
+color 0
+x y 600 1240
+color 0
+x y 640 1240
+color 0
+x y 680 1240
+color 0
+x y 720 1240
+color 0
+x y 760 1240
+color 0
+x y 800 1240
+color 0
+x y 840 1240
+color 0
+x y 880 1240
+color 0
+x y 920 1240
+color 0
+x y 960 1240
+color 0
+x y 1000 1240
+color 0
+x y 1040 1240
+color 0
+x y 0 1280
+color 0
+x y 40 1280
+color 0
+x y 80 1280
+color 0
+x y 120 1280
+color 0
+x y 160 1280
+color 0
+x y 200 1280
+color 0
+x y 240 1280
+color 0
+x y 280 1280
+color 0
+x y 320 1280
+color 0
+x y 360 1280
+color 0
+x y 400 1280
+color 0
+x y 440 1280
+color 0
+x y 480 1280
+color 0
+x y 520 1280
+color 0
+x y 560 1280
+color 0
+x y 600 1280
+color 0
+x y 640 1280
+color 0
+x y 680 1280
+color 0
+x y 720 1280
+color 0
+x y 760 1280
+color 0
+x y 800 1280
+color 0
+x y 840 1280
+color 0
+x y 880 1280
+color 0
+x y 920 1280
+color 0
+x y 960 1280
+color 0
+x y 1000 1280
+color 0
+x y 1040 1280
+color 0
+x y 0 1320
+color 0
+x y 40 1320
+color 0
+x y 80 1320
+color 0
+x y 120 1320
+color 0
+x y 160 1320
+color 0
+x y 200 1320
+color 0
+x y 240 1320
+color 0
+x y 280 1320
+color 0
+x y 320 1320
+color 0
+x y 360 1320
+color 0
+x y 400 1320
+color 0
+x y 440 1320
+color 0
+x y 480 1320
+color 0
+x y 520 1320
+color 0
+x y 560 1320
+color 0
+x y 600 1320
+color 0
+x y 640 1320
+color 0
+x y 680 1320
+color 0
+x y 720 1320
+color 0
+x y 760 1320
+color 0
+x y 800 1320
+color 0
+x y 840 1320
+color 0
+x y 880 1320
+color 0
+x y 920 1320
+color 0
+x y 960 1320
+color 0
+x y 1000 1320
+color 0
+x y 1040 1320
+z_min = 0    z_max = 9
+z_min = 0    z_max = 19
+z_min = 0    z_max = 29
+z_min = 0    z_max = 39
+z_min = 0    z_max = 49
+z_min = 0    z_max = 59
+z_min = 0    z_max = 69
+z_min = 0    z_max = 79
+z_min = 0    z_max = 89
+z_min = 0    z_max = 99
+z_min = 0    z_max = 109
+z_min = 0    z_max = 119
+z_min = 0    z_max = 129
+z_min = 0    z_max = 139
+z_min = 0    z_max = 149
+z_min = 0    z_max = 159
+z_min = 0    z_max = 169
+z_min = 0    z_max = 179
+z_min = 0    z_max = 189
+z_min = 0    z_max = 199
+z_min = 0    z_max = 209
+z_min = 0    z_max = 219
+z_min = 0    z_max = 229
+z_min = 0    z_max = 239
+z_min = 0    z_max = 249
+z_min = 0    z_max = 259
+z_min = 0    z_max = 269
+z_min = 0    z_max = 279
+z_min = 0    z_max = 289
+z_min = 0    z_max = 299
+z_min = 0    z_max = 309
+z_min = 0    z_max = 319
+z_min = 0    z_max = 329
+z_min = 0    z_max = 339
+z_min = 0    z_max = 349
+z_min = 0    z_max = 359
+z_min = 0    z_max = 369
+z_min = 0    z_max = 379
+z_min = 0    z_max = 389
+z_min = 0    z_max = 399
+z_min = 0    z_max = 409
+z_min = 0    z_max = 419
+z_min = 0    z_max = 429
+z_min = 0    z_max = 439
+z_min = 0    z_max = 449
+z_min = 0    z_max = 459
+z_min = 0    z_max = 469
+z_min = 0    z_max = 479
+z_min = 0    z_max = 489
+z_min = 0    z_max = 499
+z_min = 0    z_max = 509
+z_min = 0    z_max = 519
+z_min = 0    z_max = 529
+z_min = 0    z_max = 539
+z_min = 0    z_max = 549
+z_min = 0    z_max = 559
+z_min = 0    z_max = 569
+z_min = 0    z_max = 579
+z_min = 0    z_max = 589
+z_min = 0    z_max = 599
+z_min = 0    z_max = 609
+z_min = 0    z_max = 619
+z_min = 0    z_max = 629
+z_min = 0    z_max = 639
+z_min = 0    z_max = 649
+z_min = 0    z_max = 659
+z_min = 0    z_max = 669
+z_min = 0    z_max = 679
+z_min = 0    z_max = 689
+z_min = 0    z_max = 699
+z_min = 0    z_max = 709
+z_min = 0    z_max = 719
+z_min = 0    z_max = 729
+z_min = 0    z_max = 739
+z_min = 0    z_max = 749
+z_min = 0    z_max = 759
+z_min = 0    z_max = 769
+z_min = 0    z_max = 779
+z_min = 0    z_max = 789
+z_min = 0    z_max = 799
+z_min = 0    z_max = 809
+z_min = 0    z_max = 819
+z_min = 0    z_max = 829
+z_min = 0    z_max = 839
+z_min = 0    z_max = 849
+z_min = 0    z_max = 859
+z_min = 0    z_max = 869
+z_min = 0    z_max = 879
+z_min = 0    z_max = 889
+z_min = 0    z_max = 899
+z_min = 0    z_max = 909
+z_min = 0    z_max = 919
+z_min = 0    z_max = 929
+z_min = 0    z_max = 939
+z_min = 0    z_max = 949
+z_min = 0    z_max = 959
+z_min = 0    z_max = 969
+z_min = 0    z_max = 979
+z_min = 0    z_max = 989
+z_min = 0    z_max = 999
+z_min = 0    z_max = 1009
+z_min = 0    z_max = 1019
+z_min = 0    z_max = 1029
+z_min = 0    z_max = 1039
+z_min = 0    z_max = 1049
+z_min = 0    z_max = 1059
+z_min = 0    z_max = 1069
+z_min = 0    z_max = 1079
+z_min = 0    z_max = 1089
+z_min = 0    z_max = 1099
+z_min = 0    z_max = 1109
+z_min = 0    z_max = 1119
+z_min = 0    z_max = 1129
+z_min = 0    z_max = 1139
+z_min = 0    z_max = 1149
+z_min = 0    z_max = 1159
+z_min = 0    z_max = 1169
+z_min = 0    z_max = 1179
+z_min = 0    z_max = 1189
+z_min = 0    z_max = 1199
+z_min = 0    z_max = 1209
+z_min = 0    z_max = 1219
+z_min = 0    z_max = 1229
+z_min = 0    z_max = 1239
+z_min = 0    z_max = 1249
+z_min = 0    z_max = 1259
+z_min = 0    z_max = 1269
+z_min = 0    z_max = 1279
+z_min = 0    z_max = 1289
+z_min = 0    z_max = 1299
+z_min = 0    z_max = 1309
+z_min = 0    z_max = 1319
+z_min = 0    z_max = 1329
+z_min = 0    z_max = 1339
+z_min = 0    z_max = 1349
+z_min = 0    z_max = 1359
+z_min = 0    z_max = 1369
+z_min = 0    z_max = 1379
+z_min = 0    z_max = 1389
+z_min = 0    z_max = 1399
+z_min = 0    z_max = 1409
+z_min = 0    z_max = 1419
+z_min = 0    z_max = 1429
+z_min = 0    z_max = 1439
+z_min = 0    z_max = 1449
+z_min = 0    z_max = 1459
+z_min = 0    z_max = 1469
+z_min = 0    z_max = 1479
+z_min = 0    z_max = 1489
+z_min = 0    z_max = 1499
+z_min = 0    z_max = 1509
+z_min = 0    z_max = 1519
+z_min = 0    z_max = 1529
+z_min = 0    z_max = 1539
+z_min = 0    z_max = 1549
+z_min = 0    z_max = 1559
+z_min = 0    z_max = 1569
+z_min = 0    z_max = 1579
+z_min = 0    z_max = 1589
+z_min = 0    z_max = 1599
+z_min = 0    z_max = 1609
+z_min = 0    z_max = 1619
+z_min = 0    z_max = 1629
+z_min = 0    z_max = 1639
+z_min = 0    z_max = 1649
+z_min = 0    z_max = 1659
+z_min = 0    z_max = 1669
+z_min = 0    z_max = 1679
+z_min = 0    z_max = 1689
+z_min = 0    z_max = 1699
+z_min = 0    z_max = 1709
+z_min = 0    z_max = 1719
+z_min = 0    z_max = 1729
+z_min = 0    z_max = 1739
+z_min = 0    z_max = 1749
+z_min = 0    z_max = 1759
+z_min = 0    z_max = 1769
+z_min = 0    z_max = 1779
+z_min = 0    z_max = 1789
+z_min = 0    z_max = 1799
+z_min = 0    z_max = 1809
+z_min = 0    z_max = 1819
+z_min = 0    z_max = 1829
+z_min = 0    z_max = 1839
+z_min = 0    z_max = 1849
+z_min = 0    z_max = 1859
+z_min = 0    z_max = 1869
+z_min = 0    z_max = 1879
+z_min = 0    z_max = 1889
+z_min = 0    z_max = 1899
+z_min = 0    z_max = 1909
+z_min = 0    z_max = 1919
+z_min = 0    z_max = 1929
+z_min = 0    z_max = 1939
+z_min = 0    z_max = 1949
+z_min = 0    z_max = 1959
+z_min = 0    z_max = 1969
+z_min = 0    z_max = 1979
+z_min = 0    z_max = 1989
+z_min = 0    z_max = 1999
+z_min = 0    z_max = 2009
+z_min = 0    z_max = 2019
+z_min = 0    z_max = 2029
+z_min = 0    z_max = 2039
+z_min = 0    z_max = 2049
+z_min = 0    z_max = 2059
+z_min = 0    z_max = 2069
+z_min = 0    z_max = 2059
+z_min = 0    z_max = 2049
+z_min = 0    z_max = 2039
+z_min = 0    z_max = 2029
+z_min = 0    z_max = 2019
+z_min = 0    z_max = 2009
+z_min = 0    z_max = 1999
+z_min = 0    z_max = 1989
+z_min = 0    z_max = 1979
+z_min = 0    z_max = 1969
+z_min = 0    z_max = 1959
+z_min = 0    z_max = 1949
+z_min = 0    z_max = 1939
+z_min = 0    z_max = 1929
+z_min = 0    z_max = 1919
+z_min = 0    z_max = 1909
+z_min = 0    z_max = 1899
+z_min = 0    z_max = 1889
+z_min = 0    z_max = 1879
+z_min = 0    z_max = 1869
+z_min = 0    z_max = 1859
+z_min = 0    z_max = 1849
+z_min = 0    z_max = 1839
+z_min = 0    z_max = 1829
+z_min = 0    z_max = 1819
+z_min = 0    z_max = 1809
+z_min = 0    z_max = 1799
+z_min = 0    z_max = 1789
+z_min = 0    z_max = 1779
+z_min = 0    z_max = 1769
+z_min = 0    z_max = 1759
+z_min = 0    z_max = 1749
+z_min = 0    z_max = 1739
+z_min = 0    z_max = 1729
+z_min = 0    z_max = 1719
+z_min = 0    z_max = 1709
+z_min = 0    z_max = 1699
+z_min = 0    z_max = 1689
+z_min = 0    z_max = 1679
+z_min = 0    z_max = 1669
+z_min = 0    z_max = 1659
+z_min = 0    z_max = 1649
+z_min = 0    z_max = 1639
+z_min = 0    z_max = 1629
+z_min = 0    z_max = 1619
+z_min = 0    z_max = 1609
+z_min = 0    z_max = 1599
+z_min = 0    z_max = 1589
+z_min = 0    z_max = 1579
+z_min = 0    z_max = 1569
+z_min = 0    z_max = 1559
+z_min = 0    z_max = 1549
+z_min = 0    z_max = 1539
+z_min = 0    z_max = 1529
+z_min = 0    z_max = 1519
+z_min = 0    z_max = 1509
+z_min = 0    z_max = 1499
+z_min = 0    z_max = 1489
+z_min = 0    z_max = 1479
+z_min = 0    z_max = 1469
+z_min = 0    z_max = 1459
+z_min = 0    z_max = 1449
+z_min = 0    z_max = 1439
+z_min = 0    z_max = 1429
+z_min = 0    z_max = 1419
+z_min = 0    z_max = 1409
+z_min = 0    z_max = 1399
+z_min = 0    z_max = 1389
+z_min = 0    z_max = 1379
+z_min = 0    z_max = 1369
+z_min = 0    z_max = 1359
+z_min = 0    z_max = 1349
+z_min = 0    z_max = 1339
+z_min = 0    z_max = 1329
+z_min = 0    z_max = 1319
+z_min = 0    z_max = 1309
+z_min = 0    z_max = 1299
+z_min = 0    z_max = 1289
+z_min = 0    z_max = 1279
+z_min = 0    z_max = 1269
+z_min = 0    z_max = 1259
+z_min = 0    z_max = 1249
+z_min = 0    z_max = 1239
+z_min = 0    z_max = 1229
+z_min = 0    z_max = 1219
+z_min = 0    z_max = 1209
+z_min = 0    z_max = 1199
+z_min = 0    z_max = 1189
+z_min = 0    z_max = 1179
+z_min = 0    z_max = 1169
+z_min = 0    z_max = 1159
+z_min = 0    z_max = 1149
+z_min = 0    z_max = 1139
+z_min = 0    z_max = 1129
+z_min = 0    z_max = 1119
+z_min = 0    z_max = 1109
+z_min = 0    z_max = 1099
+z_min = 0    z_max = 1089
+z_min = 0    z_max = 1079
+z_min = 0    z_max = 1069
+z_min = 0    z_max = 1059
+z_min = 0    z_max = 1049
+z_min = 0    z_max = 1039
+z_min = 0    z_max = 1029
+z_min = 0    z_max = 1019
+z_min = 0    z_max = 1009
+z_min = 0    z_max = 999
+z_min = 0    z_max = 989
+z_min = 0    z_max = 979
+z_min = 0    z_max = 969
+z_min = 0    z_max = 959
+z_min = 0    z_max = 949
+z_min = 0    z_max = 939
+z_min = 0    z_max = 929
+z_min = 0    z_max = 919
+z_min = 0    z_max = 909
+z_min = 0    z_max = 899
+z_min = 0    z_max = 889
+z_min = 0    z_max = 879
+z_min = 0    z_max = 869
+z_min = 0    z_max = 859
+z_min = 0    z_max = 849
+z_min = 0    z_max = 839
+z_min = 0    z_max = 829
+z_min = 0    z_max = 819
+z_min = 0    z_max = 809
+z_min = 0    z_max = 799
+z_min = 0    z_max = 789
+z_min = 0    z_max = 779
+z_min = 0    z_max = 769
+z_min = 0    z_max = 759
+z_min = 0    z_max = 749
+z_min = 0    z_max = 739
+z_min = 0    z_max = 729
+z_min = 0    z_max = 719
+z_min = 0    z_max = 709
+z_min = 0    z_max = 699
+z_min = 0    z_max = 689
+z_min = 0    z_max = 679
+z_min = 0    z_max = 669
+z_min = 0    z_max = 659
+z_min = 0    z_max = 649
+z_min = 0    z_max = 639
+z_min = 0    z_max = 629
+z_min = 0    z_max = 619
+z_min = 0    z_max = 609
+z_min = 0    z_max = 599
+z_min = 0    z_max = 589
+z_min = 0    z_max = 579
+z_min = 0    z_max = 569
+z_min = 0    z_max = 559
+z_min = 0    z_max = 549
+z_min = 0    z_max = 539
+z_min = 0    z_max = 529
+z_min = 0    z_max = 519
+z_min = 0    z_max = 509
+z_min = 0    z_max = 499
+z_min = 0    z_max = 489
+z_min = 0    z_max = 479
+z_min = 0    z_max = 469
+z_min = 0    z_max = 459
+z_min = 0    z_max = 449
+z_min = 0    z_max = 439
+z_min = 0    z_max = 429
+z_min = 0    z_max = 419
+z_min = 0    z_max = 409
+z_min = 0    z_max = 399
+z_min = 0    z_max = 389
+z_min = 0    z_max = 379
+z_min = 0    z_max = 369
+z_min = 0    z_max = 359
+z_min = 0    z_max = 349
+z_min = 0    z_max = 339
+z_min = 0    z_max = 329
+z_min = 0    z_max = 319
+z_min = 0    z_max = 309
+z_min = 0    z_max = 299
+z_min = 0    z_max = 289
+z_min = 0    z_max = 279
+z_min = 0    z_max = 269
+z_min = 0    z_max = 259
+z_min = 0    z_max = 249
+z_min = 0    z_max = 239
+z_min = 0    z_max = 229
+z_min = 0    z_max = 219
+z_min = 0    z_max = 209
+z_min = 0    z_max = 199
+z_min = 0    z_max = 189
+z_min = 0    z_max = 179
+z_min = 0    z_max = 169
+z_min = 0    z_max = 159
+z_min = 0    z_max = 149
+z_min = 0    z_max = 139
+z_min = 0    z_max = 129
+z_min = 0    z_max = 119
+z_min = 0    z_max = 109
+z_min = 0    z_max = 99
+z_min = 0    z_max = 89
+z_min = 0    z_max = 79
+z_min = 0    z_max = 69
+z_min = 0    z_max = 59
+z_min = 0    z_max = 49
+z_min = 0    z_max = 39
+z_min = 0    z_max = 29
+z_min = 0    z_max = 19
+z_min = 0    z_max = 9
+z_min = 0    z_max = -1
+z_min = 0    z_max = -11
+z_min = 0    z_max = -21
+z_min = 0    z_max = -31
+z_min = 0    z_max = -41
+z_min = 0    z_max = -51
+z_min = 0    z_max = -61
+z_min = 0    z_max = -71
+z_min = 0    z_max = -81
+z_min = 0    z_max = -91
+z_min = 0    z_max = -101
+z_min = 0    z_max = -111
+z_min = 0    z_max = -121
+z_min = 0    z_max = -131
+z_min = 0    z_max = -141
+z_min = 0    z_max = -151
+z_min = 0    z_max = -161
+z_min = 0    z_max = -151
+z_min = 0    z_max = -141
+z_min = 0    z_max = -131
+z_min = 0    z_max = -121
+z_min = 0    z_max = -111
+z_min = 0    z_max = -101
+z_min = 0    z_max = -91
+z_min = 0    z_max = -81
+z_min = 0    z_max = -71
+z_min = 0    z_max = -61
+z_min = 0    z_max = -51
+z_min = 0    z_max = -41
+z_min = 0    z_max = -31
+z_min = 0    z_max = -21
+z_min = 0    z_max = -11
+z_min = 0    z_max = -1
+z_min = 0    z_max = 9
+z_min = 0    z_max = 19
+z_min = 0    z_max = 9
+z_min = 0    z_max = -1
+z_min = 0    z_max = -11
+z_min = 0    z_max = -1
+z_min = 0    z_max = -11
+z_min = 0    z_max = -1
+z_min = 0    z_max = 9
+z_min = 0    z_max = 19
+z_min = 0    z_max = 29
+z_min = 0    z_max = 39
+z_min = 0    z_max = 49
+z_min = 0    z_max = 39
+z_min = 0    z_max = 29
+z_min = 0    z_max = 19
+z_min = 0    z_max = 29
+z_min = 0    z_max = 39
+z_min = 0    z_max = 49
+z_min = 0    z_max = 59
+z_min = 0    z_max = 49
+z_min = 0    z_max = 39
+z_min = 0    z_max = 29
+z_min = 0    z_max = 19
+z_min = 0    z_max = 9

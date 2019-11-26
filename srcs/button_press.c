@@ -10,21 +10,31 @@ void grad(t_mlx *ptr, int d)
 		(tmp->col) ? (tmp->z0 += d) : 0;
 		tmp = tmp->next; 
 	}
-	// ptr->zmxp += d;
-	// ptr->zmxn += d;
-	// (ptr->zmn) ? (ptr->zmn += d) : 0;
-	// if (abs(ptr->zmxp) > abs(ptr->zmxn))
-	// 	ptr->g = fabsf(fabsf((float)YELLOW - (float)RED)/ fabsf((float)ptr->zmxp - (float)ptr->zmn));
-	// else if (abs(ptr->zmxp) < abs(ptr->zmxn))
-	// 	ptr->g = fabsf(fabsf((float)YELLOW - (float)RED)/ fabsf((float)ptr->zmn - (float)ptr->zmxp));
 }
 
+void sdvig(t_mlx *ptr, int d, int k)
+{
+	t_point *tmp;
+
+	tmp = ptr->map;
+	while (tmp)
+	{
+		(k == 1) ? tmp->x0 += d : 0;
+		(k == 2) ? tmp->y0 += d : 0;
+		tmp = tmp->next;
+	}
+}
+
+//w 13
+//s 1
+//a 0
+//d 2
 int	key_press(int key, void *param)
 {
 	t_mlx *ptr;
 
 	ptr = (t_mlx *)param;
-	// printf("key = %d\n", key);
+	printf("key = %d\n", key);
 	if (key == NUM_PAD_ESC)
 	{
 		mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);
@@ -49,34 +59,22 @@ int	key_press(int key, void *param)
 	}
 	if (key == NUM_PAD_PLUS)
 	{
-		// ptr->size_line += 10;
 		resize_map(ptr, 1);
-        // mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);
         create_mlxImg(ptr);
-        // lst_map_p(ptr);
-        // mlx_put_image_to_window(ptr->mlx_ptr, ptr->win_ptr, ptr->img_ptr, 0, 0);
-        // lst_map_p(ptr);
-		// ptr->indent_x -= ZOOM/2;
-		// (ptr->indent_x < 0) ? (ptr->indent_x = 0) : 0;
-		// ptr->indent_y -= ZOOM/2;
-		// (ptr->indent_y < 0) ? (ptr->indent_y = 0) : 0;
-		// ptr->size_line += ZOOM;
 	}
 	if (key == NUM_PAD_MINUS)
 	{
-		// ptr->size_line -= 10;
 		resize_map(ptr, -1);
 		create_mlxImg(ptr);
-		// mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);
-        // create_mlxImg(ptr);
-		// ptr->indent_x += ZOOM/2;
-		// (ptr->indent_x > WIDTH/2) ? (ptr->indent_x = WIDTH/2) : 0;
-		// ptr->indent_y += ZOOM/2;
-		// (ptr->indent_y > HEIGHT/2) ? (ptr->indent_x = HEIGHT/2) : 0;
-		// ptr->size_line -= ZOOM;
-		// (ptr->size_line < 0) ? (ptr->size_line = 0) : 0;
 	}
-	// if ()
-	// (ptr->size_line < 0) ? (ptr->size_line = 0) : 0;
+	if (key == 13)
+		sdvig(ptr, -10, 2);
+	if (key == 1)
+		sdvig(ptr, 10, 2);
+	if (key == 0)
+		sdvig(ptr, -10, 1);
+	if (key == 2)
+		sdvig(ptr, 10, 1);
+	create_mlxImg(ptr);
 	return (0);
 }
