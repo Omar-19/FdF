@@ -23,16 +23,17 @@ typedef struct		s_file
 
 typedef struct 		s_point
 {
-	int x;
-	int y;
-	int z;
-	int x0;
-	int y0;
-	int z0;
-	int	col;
-	struct 		s_point *top;
-	struct 		s_point *left;
-	struct 		s_point *next;
+	int				x;
+	int				y;
+	int				z;
+	int				x0;
+	int				y0;
+	int				z0;
+	int				col;
+	int				num_col;
+	struct s_point	*top;
+	struct s_point	*left;
+	struct s_point	*next;
 }					t_point;
 
 typedef struct		s_mlx
