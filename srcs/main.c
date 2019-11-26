@@ -101,6 +101,7 @@ int		main(int argc, char **argv)
 	t_strm	*head_s;
 	t_strm	*tmp;
 
+	ft_bzero((void *)(&ptr), sizeof(t_mlx));
 	ptr.size_line = 40;
 	if (argc != 2)
 		return (0);

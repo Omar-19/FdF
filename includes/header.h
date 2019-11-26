@@ -54,9 +54,8 @@ typedef struct		s_mlx
 	float			dx;
 	float			dy;
 	float			dz;
-	// int				zmxp;
-	// int				zmxn;
-	// int				zmn;
+	int				*z_max;
+	int				*z_min;
 }					t_mlx;
 
 typedef struct 		s_line
