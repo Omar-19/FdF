@@ -84,16 +84,14 @@ typedef	struct		s_strm
 void				writeMatrix(t_mlx ptr);
 void				matrixConversion(t_mlx *ptr);
 void				createGridСoordinates(t_mlx *ptr);
-void				create_mlxImg(t_mlx *ptr);
+void				create_mlx_img(t_mlx *ptr);
 void				ft_null(t_mlx *ptr);
 int					get_next_line(const int fd, char **line);
-int					createImage(t_mlx *ptr);
+int					create_image(t_mlx *ptr);
 int					check_ch(char *av, char c);
 t_strm				*create_el(char *av);
 int					*create_array(char *av, int size);
 int					key_press(int keycode, void *param);
-void				drawHorizontalLines(t_mlx pr, t_line ptr);
-void				drawVerticalLines(t_mlx pr, t_line ptr);
 void				paint_lines(t_mlx pr, t_point *t1, t_point *t2);
 void				readMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp);
 void				createMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp);
@@ -107,6 +105,7 @@ void				line_y(t_mlx pr, t_line ptr);
 void				line_x(t_mlx pr, t_line ptr);
 void				lst_x_sligt(t_mlx *ptr);
 void				resize_map(t_mlx *ptr, int l);
+int					col_min(t_mlx pr, float z);
 // void	draw_line(int *pix, float x0, float y0, float x1, float y1);
 
 

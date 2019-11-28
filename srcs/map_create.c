@@ -57,7 +57,8 @@ int		*create_array(char *av, int size)
 
 void	readMap(t_mlx *ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 {
-	file->res = get_next_line(file->fd, &(file->str));
+	if (!(file->res = get_next_line(file->fd, &(file->str))))
+		exit(0);
 	*head_s = create_el(file->str);
 	ptr->size_x = check_ch((*head_s)->s, ' ');
 	*tmp = *head_s;
