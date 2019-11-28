@@ -34,7 +34,7 @@ int	key_press(int key, void *param)
 	t_mlx *ptr;
 
 	ptr = (t_mlx *)param;
-	printf("key = %d\n", key);
+	// printf("key = %d\n", key);
 	if (key == NUM_PAD_ESC)
 	{
 		mlx_destroy_image(ptr->mlx_ptr, ptr->img_ptr);
@@ -55,7 +55,7 @@ int	key_press(int key, void *param)
 		(key == NUM_PAD_7) ? ptr->dz -= 0.2 : 0;
 		(key == NUM_PAD_9) ? ptr->dz += 0.2 : 0;
 		create_mlxImg(ptr);
-		printf("z_min = %d    z_max = %d\n", *ptr->z_min, *ptr->z_max);
+		// printf("z_min = %d    z_max = %d\n", *ptr->z_min, *ptr->z_max);
 	}
 	if (key == NUM_PAD_PLUS)
 	{

@@ -220,5 +220,5 @@ void	createMap(t_mlx	*ptr, t_file *file, t_strm **head_s, t_strm **tmp)
 		free(str);
 	}
 	links_map(ptr);
-	printf("z_min = %d    z_max = %d\n", *ptr->z_min, *ptr->z_max);
+	// printf("z_min = %d    z_max = %d\n", *ptr->z_min, *ptr->z_max);
 }

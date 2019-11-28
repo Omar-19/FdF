@@ -37,6 +37,15 @@ void	create_mlxImg(t_mlx *ptr)
 	ptr->pix_m = (int *)mlx_get_data_addr(ptr->img_ptr,
 		&(ptr->bits_per_pixel), &(ptr->pix_m_size), &(ptr->endian));
 	lst_iso(ptr);
+	if (abs(*(ptr->z_max)) > abs(*(ptr->z_min)))
+		ptr->g = (float)255 / (float)(abs(*(ptr->z_max)) * ptr->size_line);
+	else
+	{
+		if (abs(*(ptr->z_min)) == 0)
+			ptr->g = 0;
+		else
+			ptr->g = (float)255 / (float)(abs(*(ptr->z_min)) * ptr->size_line);
+	}// printf("min = %d, max = %d g = %f\n", abs(*(ptr->z_max)), abs(*(ptr->z_min)), ptr->g);
 	lst_map_p(ptr);
 	mlx_put_image_to_window(ptr->mlx_ptr, ptr->win_ptr, ptr->img_ptr, 0, 0);
 }
@@ -110,8 +119,8 @@ int		main(int argc, char **argv)
 	readMap(&ptr, &file, &head_s, &tmp);
 	createMap(&ptr, &file, &head_s, &tmp);
 	ptr.img_ptr = NULL;
-	ptr.color1 = YELLOW;
-	ptr.color2 = RED;
+	//ptr.color1 = YELLOW;
+	//ptr.color2 = RED;
 	createImage(&ptr);
 	return (0);
 }
